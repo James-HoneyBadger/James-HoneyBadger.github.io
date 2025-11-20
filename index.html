@@ -32,10 +32,47 @@
             margin-bottom: 40px;
         }
         
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            margin: 0 auto 20px;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        .name-line {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .brand-line {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .brand-line img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+        }
+        
         h1 {
             font-size: 3.5em;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            font-size: 2em;
         }
         
         .subtitle {
@@ -173,6 +210,21 @@
                 font-size: 2.5em;
             }
             
+            .name-line {
+                font-size: 1.8em;
+            }
+            
+            .brand-line {
+                font-size: 2em;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .brand-line img {
+                width: 50px;
+                height: 50px;
+            }
+            
             .subtitle {
                 font-size: 1.2em;
             }
@@ -186,8 +238,12 @@
 <body>
     <div class="container">
         <header>
-            <h1>🦡 James HoneyBadger</h1>
-            <p class="subtitle">Game Developer | Language Designer | Python Engineer</p>
+            <div class="name-line">James Temple</div>
+            <div class="brand-line">
+                <img src="honeybadger-avatar.png" alt="Honey Badger">
+                <span>Honey Badger</span>
+            </div>
+            <p class="subtitle">Old-School Programming Language Developer | Old-SchoolGame Developer</p>
             <p>Building IDEs, games, programming languages, and educational tools for creative expression</p>
             <div class="hero-buttons">
                 <a href="https://github.com/James-HoneyBadger" class="btn">View All Projects</a>
@@ -197,12 +253,12 @@
 
         <section class="features">
             <div class="feature-card">
-                <h3>🎮 Game Development</h3>
-                <p>Creating immersive games from text adventures to cellular automata simulators, board games with AI opponents, and interactive educational tools.</p>
+                <h3>🔧 Language Design</h3>
+                <p>Building programming languages, parsers, and construction sets that empower developers to create their own domain-specific languages.</p>
             </div>
             <div class="feature-card">
-                <h3>� Language Design</h3>
-                <p>Building programming languages, parsers, and construction sets that empower developers to create their own domain-specific languages.</p>
+                <h3>🎮 Game Development</h3>
+                <p>Creating immersive games from text adventures to cellular automata simulators, board games with AI opponents, and interactive educational tools.</p>
             </div>
             <div class="feature-card">
                 <h3>🎓 Educational Tools</h3>
@@ -314,7 +370,7 @@
                 <a href="https://github.com/James-HoneyBadger/Time_Warp" target="_blank">Time Warp IDE</a>
                 <a href="https://github.com/James-HoneyBadger/HB_Adventure_Game" target="_blank">ACS Project</a>
             </div>
-            <p style="margin-top: 30px; color: #a8d5ff;">© 2025 James HoneyBadger. Building tools for creative expression.</p>
+            <p style="margin-top: 30px; color: #a8d5ff;">© 2025 Honey Badger Universe. Building tools for creative expression.</p>
         </footer>
     </div>
 </body>
