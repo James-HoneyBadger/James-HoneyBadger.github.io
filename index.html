@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James HoneyBadger - Adventure Construction Set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #a8d5ff;
+            margin-bottom: 30px;
+        }
+        
+        .hero-buttons {
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #2196F3;
+        }
+        
+        .btn-secondary:hover {
+            background: #0b7dda;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        
+        .feature-card p {
+            color: #e0e0e0;
+            font-size: 1.1em;
+        }
+        
+        .projects {
+            margin-top: 60px;
+        }
+        
+        .projects h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #ffd700;
+        }
+        
+        .project-card {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .project-card h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        
+        .project-card .tech-stack {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: #a8d5ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        
+        .social-links a:hover {
+            color: #ffffff;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦡 James HoneyBadger</h1>
+            <p class="subtitle">Game Developer | Python Engineer | Adventure Creator</p>
+            <p>Building tools for interactive storytelling and text-based adventures</p>
+            <div class="hero-buttons">
+                <a href="https://github.com/James-HoneyBadger/HB_Adventure_Game" class="btn">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </header>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>🎮 Game Development</h3>
+                <p>Creating immersive text-based adventure games with modern Python architecture and classic gaming nostalgia.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛠️ Tool Building</h3>
+                <p>Developing intuitive IDEs and converters for adventure game creation, making game development accessible to everyone.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📚 Open Source</h3>
+                <p>Contributing to the community with well-documented, maintainable code following Python best practices.</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>Adventure Construction Set (ACS)</h3>
+                <p>A comprehensive Python-based adventure game engine and IDE for creating text-based interactive fiction. Features include:</p>
+                <ul style="margin: 15px 0 15px 30px;">
+                    <li>Visual IDE with dark theme and intuitive interface</li>
+                    <li>Natural language parser for player commands</li>
+                    <li>Modular plugin system for game mechanics</li>
+                    <li>Combat, NPC interactions, achievements, and quest journal</li>
+                    <li>Backwards compatibility with classic Eamon adventures</li>
+                    <li>DSK image converter for importing legacy games</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python 3</span>
+                    <span class="tech-tag">Tkinter GUI</span>
+                    <span class="tech-tag">JSON Data</span>
+                    <span class="tech-tag">Event-Driven</span>
+                    <span class="tech-tag">Plugin Architecture</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/James-HoneyBadger/HB_Adventure_Game" class="btn">View on GitHub</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Eamon Adventure Archive</h3>
+                <p>Preservation project maintaining 300+ classic text adventure games from the 1980s-1990s, including conversion tools and documentation.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Digital Preservation</span>
+                    <span class="tech-tag">Apple II</span>
+                    <span class="tech-tag">DSK Conversion</span>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <h2>Let's Connect</h2>
+            <p>Interested in adventure games, Python development, or collaboration?</p>
+            <div class="social-links">
+                <a href="https://github.com/James-HoneyBadger" target="_blank">GitHub</a>
+                <a href="https://github.com/James-HoneyBadger/HB_Adventure_Game" target="_blank">ACS Project</a>
+            </div>
+            <p style="margin-top: 30px; color: #a8d5ff;">© 2025 James HoneyBadger. Built with passion for interactive storytelling.</p>
+        </footer>
+    </div>
+</body>
+</html>
