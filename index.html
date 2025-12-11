@@ -347,7 +347,7 @@
             
             <div class="project-card">
                 <h3>🧬 Game of Life Simulator</h3>
-                <p>Full-featured cellular automaton simulator with 6 game modes including Conway's Game of Life, High Life, Immigration Game, Rainbow Game, Langton's Ant, and Custom Rules. Features 20+ built-in patterns, interactive drawing tools, symmetry modes, and pattern save/load.</p>
+                <p>Full-featured cellular automaton simulator with 6 game modes including Conway's Game of Life, High Life, Immigration Game, Rainbow Game, Langton's Ant, and Custom Rules. Featur[...]</p>
                 <div class="tech-stack">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">Cellular Automata</span>
@@ -359,6 +359,37 @@
                 </div>
             </div>
         </section>
+
+        <script>
+        // Re-order .project-card elements inside #projects by star count (descending).
+        // This places items with more stars first (reverse order of the numeric star count).
+        document.addEventListener('DOMContentLoaded', function () {
+          const projectsSection = document.querySelector('#projects');
+          if (!projectsSection) return;
+
+          const cards = Array.from(projectsSection.querySelectorAll('.project-card'));
+
+          function extractCount(card) {
+            const h3 = card.querySelector('h3');
+            if (!h3) return 0;
+            const text = (h3.innerText || '').trim();
+            // Try common patterns: "⭐22", "★22", or "22 stars"
+            const m = text.match(/⭐\s*([0-9,]+)/) || text.match(/★\s*([0-9,]+)/) || text.match(/([0-9,]+)\s*stars?/i);
+            if (m && m[1]) {
+              return parseInt(m[1].replace(/,/g, ''), 10) || 0;
+            }
+            return 0;
+          }
+
+          // Sort descending so highest star counts appear first (reverse order)
+          cards.sort((a, b) => extractCount(b) - extractCount(a));
+
+          // Re-append cards in the new order
+          for (const c of cards) {
+            projectsSection.appendChild(c);
+          }
+        });
+        </script>
 
         <footer id="contact">
             <h2>Let's Connect</h2>
