@@ -211,12 +211,24 @@
             return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
         }
 
+        function parseCount(val) {
+            if (typeof val === 'number' && Number.isFinite(val)) return val;
+            if (typeof val === 'string') {
+                const trimmed = val.trim();
+                const kilo = trimmed.match(/^([\d.]+)k$/i);
+                if (kilo) return Math.round(parseFloat(kilo[1]) * 1000);
+                const num = Number(trimmed);
+                if (Number.isFinite(num)) return num;
+            }
+            return 0;
+        }
+
         function renderPinned(repos) {
             const ordered = [...repos]
                 .map((r) => ({
                     ...r,
-                    stars: Number(r.stars ?? r.star ?? r.stargazers ?? 0),
-                    forks: Number(r.forks ?? r.forks_count ?? 0)
+                    stars: parseCount(r.stars ?? r.star ?? r.stargazers ?? 0),
+                    forks: parseCount(r.forks ?? r.forks_count ?? 0)
                 }))
                 .filter((r) => Number.isFinite(r.stars))
                 .filter((r) => {
