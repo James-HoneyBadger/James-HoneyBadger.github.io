@@ -280,10 +280,16 @@
                 // Cache-bust because GitHub Pages can serve cached assets.
                 const data = await fetchJson(`data/pinned.json?v=${Date.now()}`);
                 const pinned = data && Array.isArray(data.pinned) ? data.pinned : [];
+                const generatedAt = data && data.generatedAt ? data.generatedAt : null;
 
                 if (!pinned.length) {
                     starredStatus.classList.add('error');
-                    starredStatus.textContent = `Pinned list is empty for @${username}. Enable the workflow and run it once, then hard-refresh.`;
+                    if (!generatedAt) {
+                        starredStatus.textContent = `Pinned list has not been generated yet for @${username}. Run the "Update pinned repos" GitHub Action, then hard-refresh.`;
+                    } else {
+                        const when = new Date(generatedAt).toLocaleString();
+                        starredStatus.textContent = `Pinned list is empty for @${username} (last generated ${when}). Check the GitHub Action logs/token.`;
+                    }
                     return;
                 }
 

@@ -24,11 +24,19 @@ jobs:
 
       - name: Generate pinned JSON
         env:
-          # Prefer a PAT if provided; otherwise fall back to the Actions token.
-          GITHUB_TOKEN: ${{ secrets.PINNED_REPOS_TOKEN || github.token }}
+          # IMPORTANT:
+          # The default Actions token often cannot read profile pinned items via GraphQL.
+          # Add a repo secret named PINNED_REPOS_TOKEN (classic PAT with read:user, or fine-grained PAT that can access your profile).
+          GITHUB_TOKEN: ${{ secrets.PINNED_REPOS_TOKEN }}
           GH_PINNED_USER: James-HoneyBadger
           GH_PINNED_OUT: data/pinned.json
-        run: node scripts/update-pinned.mjs
+        run: |
+          if [ -z "${GITHUB_TOKEN}" ]; then
+            echo "Missing required secret: PINNED_REPOS_TOKEN"
+            echo "Add it in: Settings → Secrets and variables → Actions → New repository secret"
+            exit 1
+          fi
+          node scripts/update-pinned.mjs
 
       - name: Commit pinned JSON
         run: |
