@@ -234,18 +234,11 @@
                     link: r.link || r.html_url
                 }))
                 .filter((r) => Number.isFinite(r.stars))
-                .filter((r) => {
-                    const owner = (typeof r.owner === 'string' ? r.owner : r.owner?.login || '').toLowerCase();
-                    const link = (r.link || '').toLowerCase();
-                    const me = username.toLowerCase();
-                    const linkOwned = link.startsWith(`https://github.com/${me}/`);
-                    return owner === me || linkOwned;
-                })
                 .sort((a, b) => b.stars - a.stars)
                 .slice(0, 6);
 
             if (!ordered.length) {
-                starredStatus.textContent = `No pinned repositories found for @${username}. Add a GH token in localStorage as 'gh_token' (public_repo scope) and refresh.`;
+                starredStatus.textContent = `No pinned repositories found for @${username}.`;
                 return false;
             }
 
