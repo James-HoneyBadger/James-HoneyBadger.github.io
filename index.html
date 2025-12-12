@@ -227,15 +227,22 @@
             const ordered = [...repos]
                 .map((r) => ({
                     ...r,
-                    stars: parseCount(r.stars ?? r.star ?? r.stargazers ?? 0),
-                    forks: parseCount(r.forks ?? r.forks_count ?? 0)
+                    stars: parseCount(r.stars ?? r.star ?? r.stargazers ?? r.stargazers_count ?? 0),
+                    forks: parseCount(r.forks ?? r.forks_count ?? 0),
+                    owner: r.owner || (r.owner && r.owner.login) || username,
+                    repo: r.repo || r.name || r.full_name?.split('/').pop(),
+                    link: r.link || r.html_url
                 }))
                 .filter((r) => Number.isFinite(r.stars))
+                .filter((r) => {
+                    const owner = (typeof r.owner === 'string' ? r.owner : r.owner?.login || '').toLowerCase();
+                    return owner === username.toLowerCase();
+                })
                 .sort((a, b) => b.stars - a.stars);
 
             if (!ordered.length) {
-                starredStatus.textContent = `No pinned repositories found for @${username}.`;
-                return;
+                starredStatus.textContent = `No pinned repositories found for @${username}. Falling back to top public repos by stars.`;
+                return false;
             }
 
             starredStatus.textContent = '';
@@ -270,6 +277,34 @@
             return response.json();
         }
 
+        async function loadReposFallback() {
+            try {
+                const repos = await fetchJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
+                const mine = Array.isArray(repos) ? repos.filter((r) => !r.fork && r.owner?.login?.toLowerCase() === username.toLowerCase()) : [];
+                const normalized = mine.map((r) => ({
+                    owner: r.owner?.login || username,
+                    repo: r.name,
+                    link: r.html_url,
+                    stars: r.stargazers_count,
+                    forks: r.forks_count,
+                    description: r.description,
+                    language: r.language
+                }));
+
+                const rendered = renderPinned(normalized);
+                if (rendered === false) {
+                    starredStatus.classList.add('error');
+                    starredStatus.textContent = `No repositories available for @${username}.`;
+                } else {
+                    starredStatus.textContent = 'Showing top public repositories by stars (pinned API unavailable).';
+                }
+            } catch (err) {
+                starredStatus.classList.add('error');
+                starredStatus.textContent = 'Unable to load repositories right now. Try again shortly or view them directly on GitHub.';
+                console.error(err);
+            }
+        }
+
         async function loadPinned() {
             const sources = [
                 `https://gh-pinned-repos.egoist.dev/?username=${username}`,
@@ -280,17 +315,18 @@
                 try {
                     const pinned = await fetchJson(url);
                     if (Array.isArray(pinned) && pinned.length) {
-                        renderPinned(pinned);
-                        starredStatus.textContent = '';
-                        return;
+                        const ok = renderPinned(pinned);
+                        if (ok !== false) {
+                            starredStatus.textContent = '';
+                            return;
+                        }
                     }
                 } catch (err) {
                     console.warn('Pinned fetch failed from', url, err);
                 }
             }
 
-            starredStatus.classList.add('error');
-            starredStatus.textContent = `No pinned repositories found for @${username} (API sources empty).`;
+            await loadReposFallback();
         }
 
         loadPinned();
