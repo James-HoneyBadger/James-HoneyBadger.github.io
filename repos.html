@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Repositories | James HoneyBadger</title>
+  <title>My Repositories | James HoneyBadger</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
 
@@ -121,9 +121,9 @@
 <body>
   <div class="shell">
     <header class="hero">
-      <p class="tagline" style="color: var(--muted); letter-spacing: 0.04em;">ALL PUBLIC REPOS · LIVE FROM GITHUB</p>
+      <p class="tagline" style="color: var(--muted); letter-spacing: 0.04em;">OWNED REPOS ONLY · LIVE FROM GITHUB</p>
       <h1 class="title">Repository directory</h1>
-      <p class="subtitle">Search, filter, and sort every public repo under @James-HoneyBadger. Data is pulled at load time from the GitHub API.</p>
+      <p class="subtitle">Search, filter, and sort repositories owned by @James-HoneyBadger. Forks and non-owned repos are excluded.</p>
       <div class="actions">
         <a class="btn secondary" href="index.html">Back to highlights</a>
         <a class="btn" href="https://github.com/James-HoneyBadger" target="_blank" rel="noreferrer">Open GitHub profile</a>
@@ -252,8 +252,11 @@
           throw new Error(`GitHub API error: ${response.status}`);
         }
         const repos = await response.json();
-        state.repos = repos;
-        setLanguages(repos);
+        const owned = Array.isArray(repos)
+          ? repos.filter((r) => (r.owner?.login || '').toLowerCase() === username.toLowerCase()).filter((r) => !r.fork)
+          : [];
+        state.repos = owned;
+        setLanguages(owned);
         render();
       } catch (err) {
         statusEl.classList.add('error');

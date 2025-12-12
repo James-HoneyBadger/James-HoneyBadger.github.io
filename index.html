@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James HoneyBadger | Pinned Repos</title>
+    <title>James HoneyBadger | Repos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
 
@@ -47,6 +47,20 @@
 
         @media (max-width: 900px) {
             header.hero { grid-template-columns: 1fr; }
+        }
+
+        .hero-media {
+            display: grid;
+            place-items: center;
+        }
+
+        .hero-media img {
+            width: min(320px, 100%);
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
         }
 
         .tagline { color: var(--muted); letter-spacing: 0.04em; font-size: 0.95rem; }
@@ -156,43 +170,30 @@
     <div class="shell">
         <header class="hero">
             <div>
-                <p class="tagline">JAMES HONEYBADGER · BUILDS & BOOKMARKS</p>
-                <h1 class="title">Pinned GitHub picks</h1>
-                <p class="subtitle">A live look at the repositories pinned on my GitHub profile. Sorted by stars (highest first) with a quick jump to everything I build.</p>
+                <p class="tagline">JAMES HONEYBADGER · PROJECTS</p>
+                <h1 class="title">My GitHub repositories</h1>
+                <p class="subtitle">A live snapshot of repositories I own on GitHub, ranked by stars (highest first). No forks, no other owners.</p>
 
                 <div class="hero-actions">
                     <a class="btn" href="repos.html">See all repositories</a>
                     <a class="btn secondary" href="https://github.com/James-HoneyBadger" target="_blank" rel="noreferrer">Open GitHub profile</a>
                 </div>
             </div>
-            <div>
-                <div class="stats-grid">
-                    <div class="stat">
-                        <label>Focus</label>
-                        <div class="value">Games · Languages</div>
-                    </div>
-                    <div class="stat">
-                        <label>Stack</label>
-                        <div class="value">Python · JS</div>
-                    </div>
-                    <div class="stat">
-                        <label>Location</label>
-                        <div class="value">GitHub / Open</div>
-                    </div>
-                </div>
+            <div class="hero-media">
+                <img src="hb.jpg" alt="HoneyBadger graphic" loading="eager" decoding="async">
             </div>
         </header>
 
         <section class="panel" id="starred">
             <div class="panel-header">
                 <div>
-                    <h2>Pinned highlights</h2>
-                    <p>Only the pinned repositories from my GitHub profile, ordered by stars (highest first).</p>
+                    <h2>Highlights</h2>
+                    <p>Top repositories I own, ordered by stars (highest first).</p>
                 </div>
                 <a class="btn secondary" href="repos.html">Browse everything</a>
             </div>
 
-            <div class="status" id="starred-status">Loading pinned repositories…</div>
+            <div class="status" id="starred-status">Loading repositories…</div>
             <div class="grid" id="starred-grid" aria-live="polite"></div>
         </section>
 
@@ -223,44 +224,41 @@
             return 0;
         }
 
-        function renderPinned(repos) {
-            const ordered = [...repos]
-                .map((r) => ({
-                    ...r,
-                    stars: parseCount(r.stars ?? r.star ?? r.stargazers ?? r.stargazers_count ?? 0),
-                    forks: parseCount(r.forks ?? r.forks_count ?? 0),
-                    owner: r.owner?.login || r.owner || r.ownerName || r.author || null,
-                    repo: r.repo || r.name || r.full_name?.split('/').pop(),
-                    link: r.link || r.html_url
-                }))
-                .filter((r) => Number.isFinite(r.stars))
-                .sort((a, b) => b.stars - a.stars)
+        function renderOwnedRepos(repos) {
+            const owned = [...repos]
+                .filter((r) => (r.owner?.login || '').toLowerCase() === username.toLowerCase())
+                .filter((r) => !r.fork)
+                .sort((a, b) => b.stargazers_count - a.stargazers_count)
                 .slice(0, 6);
 
-            if (!ordered.length) {
-                starredStatus.textContent = `No pinned repositories found for @${username}.`;
-                return false;
+            if (!owned.length) {
+                starredStatus.classList.add('error');
+                starredStatus.textContent = `No owned repositories found for @${username}.`;
+                starredGrid.innerHTML = '';
+                return;
             }
 
             starredStatus.textContent = '';
-            starredGrid.innerHTML = ordered.map((repo) => {
+            starredGrid.innerHTML = owned.map((repo) => {
                 const desc = repo.description ? escapeHtml(repo.description) : 'No description provided yet.';
                 const lang = repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : '';
+                const updated = new Date(repo.pushed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
 
                 return `
                     <article class="card">
                         <div class="meta">
-                            <span class="pill">⭐ ${repo.stars}</span>
-                            <span class="pill">🍴 ${repo.forks}</span>
+                            <span class="pill">⭐ ${repo.stargazers_count}</span>
+                            <span class="pill">🍴 ${repo.forks_count}</span>
                             ${lang}
                         </div>
-                        <h3 style="margin-top: 12px; font-size: 1.2rem;">${escapeHtml(repo.repo)}</h3>
+                        <h3 style="margin-top: 12px; font-size: 1.2rem;">${escapeHtml(repo.name)}</h3>
                         <p class="desc">${desc}</p>
                         <div class="meta">
-                            <span>Owner · ${escapeHtml(repo.owner)}</span>
+                            <span>Owner · ${escapeHtml(repo.owner.login)}</span>
+                            <span>Last push · ${updated}</span>
                         </div>
                         <div style="margin-top: 14px; display: flex; gap: 10px;">
-                            <a class="btn secondary" href="${repo.link}" target="_blank" rel="noreferrer">Open on GitHub</a>
+                            <a class="btn secondary" href="${repo.html_url}" target="_blank" rel="noreferrer">Open on GitHub</a>
                         </div>
                     </article>`;
             }).join('');
@@ -274,34 +272,18 @@
             return response.json();
         }
 
-        async function loadPinned() {
+        async function loadHighlights() {
             try {
-                // Deterministic pinned list generated by this repo's GitHub Action.
-                // Cache-bust because GitHub Pages can serve cached assets.
-                const data = await fetchJson(`data/pinned.json?v=${Date.now()}`);
-                const pinned = data && Array.isArray(data.pinned) ? data.pinned : [];
-                const generatedAt = data && data.generatedAt ? data.generatedAt : null;
-
-                if (!pinned.length) {
-                    starredStatus.classList.add('error');
-                    if (!generatedAt) {
-                        starredStatus.textContent = `Pinned list has not been generated yet for @${username}. Run the "Update pinned repos" GitHub Action, then hard-refresh.`;
-                    } else {
-                        const when = new Date(generatedAt).toLocaleString();
-                        starredStatus.textContent = `Pinned list is empty for @${username} (last generated ${when}). Check the GitHub Action logs/token.`;
-                    }
-                    return;
-                }
-
-                renderPinned(pinned);
+                const repos = await fetchJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
+                renderOwnedRepos(Array.isArray(repos) ? repos : []);
             } catch (err) {
                 starredStatus.classList.add('error');
-                starredStatus.textContent = `Unable to load pinned data for @${username}.`;
+                starredStatus.textContent = `Unable to load repositories for @${username}.`;
                 console.error(err);
             }
         }
 
-        loadPinned();
+        loadHighlights();
     </script>
 </body>
 </html>
