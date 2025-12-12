@@ -3,404 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James HoneyBadger - Adventure Construction Set</title>
+    <title>James HoneyBadger | Starred Repos</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+        :root {
+            --bg: #0f172a;
+            --panel: rgba(255, 255, 255, 0.04);
+            --accent: #ffb703;
+            --accent-2: #38bdf8;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+            --glow: 0 10px 40px rgba(56, 189, 248, 0.25);
         }
-        
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #ffffff;
+            font-family: 'Space Grotesk', 'Segoe UI', Tahoma, sans-serif;
+            background: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.18), transparent 25%),
+                                    radial-gradient(circle at 90% 10%, rgba(255, 183, 3, 0.16), transparent 30%),
+                                    linear-gradient(135deg, #0b1224 0%, #111827 50%, #0f172a 100%);
+            color: var(--text);
             line-height: 1.6;
+            min-height: 100vh;
+            padding: 32px 20px 60px;
         }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            margin-bottom: 40px;
-        }
-        
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #ffd700;
-            margin: 0 auto 20px;
-            display: block;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        
-        .name-line {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .brand-line {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .brand-line img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: 3px solid #ffd700;
-        }
-        
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        h2 {
-            font-size: 2em;
-        }
-        
-        .subtitle {
-            font-size: 1.5em;
-            color: #a8d5ff;
-            margin-bottom: 30px;
-        }
-        
-        .hero-buttons {
-            margin-top: 30px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            background: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            transition: all 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        
-        .btn:hover {
-            background: #45a049;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-        }
-        
-        .btn-secondary {
-            background: #2196F3;
-        }
-        
-        .btn-secondary:hover {
-            background: #0b7dda;
-        }
-        
-        .features {
+
+        .shell { max-width: 1200px; margin: 0 auto; }
+
+        header.hero {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 32px;
+            padding: 32px;
+            border-radius: 18px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            box-shadow: var(--glow);
+            backdrop-filter: blur(12px);
         }
-        
-        .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s;
+
+        @media (max-width: 900px) {
+            header.hero { grid-template-columns: 1fr; }
         }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-        
-        .feature-card h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #ffd700;
-        }
-        
-        .feature-card p {
-            color: #e0e0e0;
-            font-size: 1.1em;
-        }
-        
-        .projects {
-            margin-top: 60px;
-        }
-        
-        .projects h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #ffd700;
-        }
-        
-        .project-card {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border-left: 5px solid #4CAF50;
-        }
-        
-        .project-card h3 {
-            font-size: 2em;
-            margin-bottom: 15px;
-            color: #4CAF50;
-        }
-        
-        .project-card .tech-stack {
-            margin: 20px 0;
-            display: flex;
-            flex-wrap: wrap;
+
+        .tagline { color: var(--muted); letter-spacing: 0.04em; font-size: 0.95rem; }
+        .title { font-size: 2.8rem; margin: 10px 0 8px; font-weight: 700; }
+        .subtitle { color: var(--muted); font-size: 1.05rem; max-width: 720px; }
+
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
             gap: 10px;
+            padding: 12px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #0b1224;
+            background: var(--accent);
+            font-weight: 600;
+            box-shadow: var(--glow);
+            transition: transform 150ms ease, box-shadow 150ms ease;
         }
-        
-        .tech-tag {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
+
+        .btn.secondary {
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+            box-shadow: none;
         }
-        
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
+
+        .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(255, 183, 3, 0.28); }
+        .btn.secondary:hover { box-shadow: var(--glow); }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 14px;
+            margin-top: 24px;
         }
-        
-        .social-links {
+
+        .stat {
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+        }
+
+        .stat label { display: block; color: var(--muted); font-size: 0.85rem; }
+        .stat .value { font-size: 1.3rem; font-weight: 700; margin-top: 6px; }
+
+        .panel {
+            margin-top: 36px;
+            padding: 28px;
+            border-radius: 16px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .panel-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .panel-header h2 { font-size: 1.4rem; }
+        .panel-header p { color: var(--muted); font-size: 0.95rem; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
             margin-top: 20px;
         }
-        
-        .social-links a {
-            color: #a8d5ff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
+
+        .card {
+            position: relative;
+            padding: 18px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            background: rgba(15, 23, 42, 0.9);
+            transition: transform 150ms ease, border-color 150ms ease;
         }
-        
-        .social-links a:hover {
-            color: #ffffff;
+
+        .card:hover { transform: translateY(-3px); border-color: rgba(255, 183, 3, 0.4); }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(56, 189, 248, 0.12);
+            color: var(--text);
+            font-size: 0.9rem;
+            border: 1px solid rgba(56, 189, 248, 0.3);
         }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-            
-            .name-line {
-                font-size: 1.8em;
-            }
-            
-            .brand-line {
-                font-size: 2em;
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .brand-line img {
-                width: 50px;
-                height: 50px;
-            }
-            
-            .subtitle {
-                font-size: 1.2em;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-        }
+
+        .meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; color: var(--muted); font-size: 0.9rem; }
+        .desc { margin: 10px 0 12px; color: var(--text); font-size: 0.98rem; }
+
+        .badge { color: var(--muted); font-size: 0.85rem; border: 1px solid var(--border); padding: 6px 8px; border-radius: 10px; }
+
+        footer { margin-top: 40px; text-align: center; color: var(--muted); }
+        footer a { color: var(--accent-2); text-decoration: none; }
+        footer a:hover { color: #7dd3fc; }
+
+        .status { color: var(--muted); margin-top: 12px; font-size: 0.95rem; }
+        .error { color: #fca5a5; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="brand-line">
-                <img src="hb.jpg?v=2" alt="Honey Badger">
-                <span>Honey Badger</span>
+    <div class="shell">
+        <header class="hero">
+            <div>
+                <p class="tagline">JAMES HONEYBADGER · BUILDS & BOOKMARKS</p>
+                <h1 class="title">Starred GitHub picks</h1>
+                <p class="subtitle">A live look at the repositories I star across GitHub. Bookmark-worthy tools, games, and experiments, with a quick jump to everything I build.</p>
+
+                <div class="hero-actions">
+                    <a class="btn" href="repos.html">See all repositories</a>
+                    <a class="btn secondary" href="https://github.com/James-HoneyBadger" target="_blank" rel="noreferrer">Open GitHub profile</a>
+                </div>
             </div>
-            <p class="subtitle">Bringing Late 20th Century Coding into the 21st Century</p>
-            <p>Building IDEs, games, programming languages, and educational tools for creative expression</p>
-            <div class="hero-buttons">
-                <a href="https://github.com/James-HoneyBadger" class="btn">View All Projects</a>
+            <div>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <label>Focus</label>
+                        <div class="value">Games · Languages</div>
+                    </div>
+                    <div class="stat">
+                        <label>Stack</label>
+                        <div class="value">Python · JS</div>
+                    </div>
+                    <div class="stat">
+                        <label>Location</label>
+                        <div class="value">GitHub / Open</div>
+                    </div>
+                </div>
             </div>
         </header>
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>🔧 Language Design</h3>
-                <p>Building programming languages, parsers, and construction sets that empower developers to create their own domain-specific languages.</p>
+        <section class="panel" id="starred">
+            <div class="panel-header">
+                <div>
+                    <h2>Starred highlights</h2>
+                    <p>What I have starred lately, sorted by community stars. Pulled live from the GitHub API.</p>
+                </div>
+                <a class="btn secondary" href="repos.html">Browse everything</a>
             </div>
-            <div class="feature-card">
-                <h3>🎮 Game Development</h3>
-                <p>Creating immersive games from text adventures to cellular automata simulators, board games with AI opponents, and interactive educational tools.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🎓 Educational Tools</h3>
-                <p>Developing accessible IDEs and learning environments that make programming fun and approachable for students and hobbyists.</p>
-            </div>
+
+            <div class="status" id="starred-status">Loading starred repositories…</div>
+            <div class="grid" id="starred-grid" aria-live="polite"></div>
         </section>
 
-        <section class="projects" id="projects">
-            <h2>Pinned Projects</h2>
-            
-            <div class="project-card">
-                <h3>🚀 Time Warp IDE ⭐22</h3>
-                <p>An accessible yet powerful programming environment for students, educators, and hobbyists. Perfect for learning and experimentation with a clean, intuitive interface.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Educational</span>
-                    <span class="tech-tag">IDE</span>
-                    <span class="tech-tag">Beginner-Friendly</span>
-                </div>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/James-HoneyBadger/Time_Warp" class="btn">View on GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>🎮 Adventure Construction Set (ACS)</h3>
-                <p>A comprehensive Python-based adventure game engine and IDE for creating text-based interactive fiction. Features include:</p>
-                <ul style="margin: 15px 0 15px 30px;">
-                    <li>Visual IDE with dark theme and intuitive interface</li>
-                    <li>Natural language parser for player commands</li>
-                    <li>Modular plugin system for game mechanics</li>
-                    <li>Combat, NPC interactions, achievements, and quest journal</li>
-                    <li>Backwards compatibility with classic Eamon adventures (300+ games)</li>
-                    <li>DSK image converter for importing legacy games</li>
-                </ul>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python 3</span>
-                    <span class="tech-tag">Tkinter GUI</span>
-                    <span class="tech-tag">JSON Data</span>
-                    <span class="tech-tag">Event-Driven</span>
-                    <span class="tech-tag">Plugin Architecture</span>
-                </div>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/James-HoneyBadger/HB_Adventure_Game" class="btn">View on GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>🌊 Gulf Of Mexico ⭐3</h3>
-                <p>The Perfect Programming Language - based on Lu Wilson (TodePond)'s conceptual design. A creative exploration of language design philosophy.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Language Design</span>
-                    <span class="tech-tag">Conceptual</span>
-                    <span class="tech-tag">Experimental</span>
-                </div>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/James-HoneyBadger/GulfOfMexico" class="btn">View on GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>🔤 Language Construction Set</h3>
-                <p>Honey Badger Language Construction Set - A comprehensive toolbox for designing custom programming languages. Build your own DSLs and experimental languages with ease.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Compiler Design</span>
-                    <span class="tech-tag">Parser</span>
-                    <span class="tech-tag">Language Tools</span>
-                    <span class="tech-tag">Python</span>
-                </div>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/James-HoneyBadger/HB_Language_Construction" class="btn">View on GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>🎲 Reversi/Othello</h3>
-                <p>Professional Reversi/Othello game with AI opponents (6 difficulty levels), configurable board sizes (4×4 to 16×16), beautiful themes, and comprehensive documentation.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pygame</span>
-                    <span class="tech-tag">AI</span>
-                    <span class="tech-tag">Game Development</span>
-                </div>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/James-HoneyBadger/HB_Reversi" class="btn">View on GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <h3>🧬 Game of Life Simulator</h3>
-                <p>Full-featured cellular automaton simulator with 6 game modes including Conway's Game of Life, High Life, Immigration Game, Rainbow Game, Langton's Ant, and Custom Rules. Featur[...]</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Cellular Automata</span>
-                    <span class="tech-tag">Simulation</span>
-                    <span class="tech-tag">Interactive</span>
-                </div>
-                <div style="margin-top: 20px;">
-                    <a href="https://github.com/James-HoneyBadger/HB_Game_Of_Life" class="btn">View on GitHub</a>
-                </div>
-            </div>
-        </section>
-
-        <script>
-        // Re-order .project-card elements inside #projects by star count (descending).
-        // This places items with more stars first (reverse order of the numeric star count).
-        document.addEventListener('DOMContentLoaded', function () {
-          const projectsSection = document.querySelector('#projects');
-          if (!projectsSection) return;
-
-          const cards = Array.from(projectsSection.querySelectorAll('.project-card'));
-
-          function extractCount(card) {
-            const h3 = card.querySelector('h3');
-            if (!h3) return 0;
-            const text = (h3.innerText || '').trim();
-            // Try common patterns: "⭐22", "★22", or "22 stars"
-            const m = text.match(/⭐\s*([0-9,]+)/) || text.match(/★\s*([0-9,]+)/) || text.match(/([0-9,]+)\s*stars?/i);
-            if (m && m[1]) {
-              return parseInt(m[1].replace(/,/g, ''), 10) || 0;
-            }
-            return 0;
-          }
-
-          // Sort descending so highest star counts appear first (reverse order)
-          cards.sort((a, b) => extractCount(b) - extractCount(a));
-
-          // Re-append cards in the new order
-          for (const c of cards) {
-            projectsSection.appendChild(c);
-          }
-        });
-        </script>
-
-        <footer id="contact">
-            <h2>Let's Connect</h2>
-            <p>Interested in games, language design, educational tools, or Python development?</p>
-            <div class="social-links">
-                <a href="https://github.com/James-HoneyBadger" target="_blank">GitHub Profile</a>
-                <a href="https://github.com/James-HoneyBadger/Time_Warp" target="_blank">Time Warp IDE</a>
-                <a href="https://github.com/James-HoneyBadger/HB_Adventure_Game" target="_blank">ACS Project</a>
-            </div>
-            <p style="margin-top: 30px; color: #a8d5ff;">© 2025 Honey Badger Universe. Building tools for creative expression.</p>
+        <footer>
+            <p>Built with GitHub Pages · Data from the public GitHub API.</p>
+            <p><a href="https://github.com/James-HoneyBadger">@James-HoneyBadger</a></p>
         </footer>
     </div>
+
+    <script>
+        const username = 'James-HoneyBadger';
+        const starredGrid = document.getElementById('starred-grid');
+        const starredStatus = document.getElementById('starred-status');
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
+        }
+
+        function renderStarred(repos) {
+            const highlight = repos
+                .filter((r) => r.stargazers_count > 0)
+                .sort((a, b) => b.stargazers_count - a.stargazers_count)
+                .slice(0, 6);
+
+            if (!highlight.length) {
+                starredStatus.textContent = 'No starred repositories yet. Check back soon.';
+                return;
+            }
+
+            starredStatus.textContent = '';
+            starredGrid.innerHTML = highlight.map((repo) => {
+                const desc = repo.description ? escapeHtml(repo.description) : 'No description provided yet.';
+                const lang = repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : '';
+                const updated = new Date(repo.pushed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+                const owner = repo.owner && repo.owner.login ? `<span>Owner · ${escapeHtml(repo.owner.login)}</span>` : '';
+                const isFork = repo.fork ? '<span>Fork</span>' : '';
+
+                return `
+                    <article class="card">
+                        <div class="meta">
+                            <span class="pill">⭐ ${repo.stargazers_count}</span>
+                            ${lang}
+                            ${isFork}
+                        </div>
+                        <h3 style="margin-top: 12px; font-size: 1.2rem;">${escapeHtml(repo.name)}</h3>
+                        <p class="desc">${desc}</p>
+                        <div class="meta">
+                            ${owner}
+                            <span>Last push · ${updated}</span>
+                            <span>Visibility · ${repo.private ? 'Private' : 'Public'}</span>
+                        </div>
+                        <div style="margin-top: 14px; display: flex; gap: 10px;">
+                            <a class="btn secondary" href="${repo.html_url}" target="_blank" rel="noreferrer">Open on GitHub</a>
+                        </div>
+                    </article>`;
+            }).join('');
+        }
+
+        async function fetchJson(url) {
+            const response = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+            if (!response.ok) {
+                throw new Error(`GitHub API error: ${response.status}`);
+            }
+            return response.json();
+        }
+
+        async function loadStarred() {
+            try {
+                const starred = await fetchJson(`https://api.github.com/users/${username}/starred?per_page=100&sort=created`);
+
+                if (!Array.isArray(starred) || !starred.length) {
+                    starredStatus.textContent = 'No starred repositories yet. Showing your public repos instead.';
+                    const fallbackRepos = await fetchJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
+                    renderStarred(fallbackRepos);
+                    return;
+                }
+
+                starredStatus.textContent = '';
+                renderStarred(starred);
+            } catch (err) {
+                starredStatus.classList.add('error');
+                starredStatus.textContent = 'Unable to load starred repositories right now. Try again shortly or view them directly on GitHub.';
+                console.error(err);
+            }
+        }
+
+        loadStarred();
+    </script>
 </body>
 </html>
