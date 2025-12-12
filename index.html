@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James HoneyBadger | Starred Repos</title>
+    <title>James HoneyBadger | Pinned Repos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
 
@@ -157,8 +157,8 @@
         <header class="hero">
             <div>
                 <p class="tagline">JAMES HONEYBADGER · BUILDS & BOOKMARKS</p>
-                <h1 class="title">Starred GitHub picks</h1>
-                <p class="subtitle">A live look at the repositories I star across GitHub. Bookmark-worthy tools, games, and experiments, with a quick jump to everything I build.</p>
+                <h1 class="title">Pinned GitHub picks</h1>
+                <p class="subtitle">A live look at the repositories pinned on my GitHub profile. Sorted by stars (highest first) with a quick jump to everything I build.</p>
 
                 <div class="hero-actions">
                     <a class="btn" href="repos.html">See all repositories</a>
@@ -186,13 +186,13 @@
         <section class="panel" id="starred">
             <div class="panel-header">
                 <div>
-                    <h2>Starred highlights</h2>
-                    <p>What I have starred lately, sorted by community stars. Pulled live from the GitHub API.</p>
+                    <h2>Pinned highlights</h2>
+                    <p>Only the pinned repositories from my GitHub profile, ordered by stars (highest first).</p>
                 </div>
                 <a class="btn secondary" href="repos.html">Browse everything</a>
             </div>
 
-            <div class="status" id="starred-status">Loading starred repositories…</div>
+            <div class="status" id="starred-status">Loading pinned repositories…</div>
             <div class="grid" id="starred-grid" aria-live="polite"></div>
         </section>
 
@@ -211,75 +211,67 @@
             return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
         }
 
-        function renderStarred(repos) {
-            const highlight = repos
-                .filter((r) => r.stargazers_count > 0)
-                .sort((a, b) => b.stargazers_count - a.stargazers_count)
-                .slice(0, 6);
+        function renderPinned(repos) {
+            const ordered = [...repos]
+                .filter((r) => typeof r.stars === 'number')
+                .filter((r) => (r.owner || '').toLowerCase() === username.toLowerCase())
+                .sort((a, b) => b.stars - a.stars);
 
-            if (!highlight.length) {
-                starredStatus.textContent = 'No starred repositories yet. Check back soon.';
+            if (!ordered.length) {
+                starredStatus.textContent = `No pinned repositories found for @${username}.`;
                 return;
             }
 
             starredStatus.textContent = '';
-            starredGrid.innerHTML = highlight.map((repo) => {
+            starredGrid.innerHTML = ordered.map((repo) => {
                 const desc = repo.description ? escapeHtml(repo.description) : 'No description provided yet.';
                 const lang = repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : '';
-                const updated = new Date(repo.pushed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
-                const owner = repo.owner && repo.owner.login ? `<span>Owner · ${escapeHtml(repo.owner.login)}</span>` : '';
-                const isFork = repo.fork ? '<span>Fork</span>' : '';
 
                 return `
                     <article class="card">
                         <div class="meta">
-                            <span class="pill">⭐ ${repo.stargazers_count}</span>
+                            <span class="pill">⭐ ${repo.stars}</span>
+                            <span class="pill">🍴 ${repo.forks}</span>
                             ${lang}
-                            ${isFork}
                         </div>
-                        <h3 style="margin-top: 12px; font-size: 1.2rem;">${escapeHtml(repo.name)}</h3>
+                        <h3 style="margin-top: 12px; font-size: 1.2rem;">${escapeHtml(repo.repo)}</h3>
                         <p class="desc">${desc}</p>
                         <div class="meta">
-                            ${owner}
-                            <span>Last push · ${updated}</span>
-                            <span>Visibility · ${repo.private ? 'Private' : 'Public'}</span>
+                            <span>Owner · ${escapeHtml(repo.owner)}</span>
                         </div>
                         <div style="margin-top: 14px; display: flex; gap: 10px;">
-                            <a class="btn secondary" href="${repo.html_url}" target="_blank" rel="noreferrer">Open on GitHub</a>
+                            <a class="btn secondary" href="${repo.link}" target="_blank" rel="noreferrer">Open on GitHub</a>
                         </div>
                     </article>`;
             }).join('');
         }
 
         async function fetchJson(url) {
-            const response = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+            const response = await fetch(url, { headers: { 'Accept': 'application/json' } });
             if (!response.ok) {
-                throw new Error(`GitHub API error: ${response.status}`);
+                throw new Error(`API error: ${response.status}`);
             }
             return response.json();
         }
 
-        async function loadStarred() {
+        async function loadPinned() {
             try {
-                const starred = await fetchJson(`https://api.github.com/users/${username}/starred?per_page=100&sort=created`);
+                const pinned = await fetchJson(`https://gh-pinned-repos.egoist.dev/?username=${username}`);
 
-                if (!Array.isArray(starred) || !starred.length) {
-                    starredStatus.textContent = 'No starred repositories yet. Showing your public repos instead.';
-                    const fallbackRepos = await fetchJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
-                    renderStarred(fallbackRepos);
+                if (!Array.isArray(pinned) || !pinned.length) {
+                    starredStatus.textContent = `No pinned repositories found for @${username}.`;
                     return;
                 }
 
-                starredStatus.textContent = '';
-                renderStarred(starred);
+                renderPinned(pinned);
             } catch (err) {
                 starredStatus.classList.add('error');
-                starredStatus.textContent = 'Unable to load starred repositories right now. Try again shortly or view them directly on GitHub.';
+                starredStatus.textContent = 'Unable to load pinned repositories right now. Try again shortly or view them directly on GitHub.';
                 console.error(err);
             }
         }
 
-        loadStarred();
+        loadPinned();
     </script>
 </body>
 </html>
