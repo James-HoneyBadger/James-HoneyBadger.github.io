@@ -213,7 +213,12 @@
 
         function renderPinned(repos) {
             const ordered = [...repos]
-                .filter((r) => typeof r.stars === 'number')
+                .map((r) => ({
+                    ...r,
+                    stars: Number(r.stars ?? r.star ?? r.stargazers ?? 0),
+                    forks: Number(r.forks ?? r.forks_count ?? 0)
+                }))
+                .filter((r) => Number.isFinite(r.stars))
                 .filter((r) => {
                     const owner = (r.owner || '').toLowerCase();
                     const link = (r.link || '').toLowerCase();
