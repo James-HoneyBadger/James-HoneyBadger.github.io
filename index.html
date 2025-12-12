@@ -187,13 +187,13 @@
         <section class="panel" id="starred">
             <div class="panel-header">
                 <div>
-                    <h2>Highlights</h2>
-                    <p>Top repositories I own, ordered by stars (highest first).</p>
+                    <h2>Pinned highlights</h2>
+                    <p>Only pinned repositories from my GitHub profile (owned by me), ordered by stars (highest first).</p>
                 </div>
                 <a class="btn secondary" href="repos.html">Browse everything</a>
             </div>
 
-            <div class="status" id="starred-status">Loading repositories…</div>
+            <div class="status" id="starred-status">Loading pinned repositories…</div>
             <div class="grid" id="starred-grid" aria-live="polite"></div>
         </section>
 
@@ -212,53 +212,39 @@
             return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
         }
 
-        function parseCount(val) {
-            if (typeof val === 'number' && Number.isFinite(val)) return val;
-            if (typeof val === 'string') {
-                const trimmed = val.trim();
-                const kilo = trimmed.match(/^([\d.]+)k$/i);
-                if (kilo) return Math.round(parseFloat(kilo[1]) * 1000);
-                const num = Number(trimmed);
-                if (Number.isFinite(num)) return num;
-            }
-            return 0;
-        }
+        function renderPinned(repos) {
+            const pinned = [...repos]
+                .filter((r) => (r.owner || '').toLowerCase() === username.toLowerCase())
+                .sort((a, b) => (b.stars || 0) - (a.stars || 0));
 
-        function renderOwnedRepos(repos) {
-            const owned = [...repos]
-                .filter((r) => (r.owner?.login || '').toLowerCase() === username.toLowerCase())
-                .filter((r) => !r.fork)
-                .sort((a, b) => b.stargazers_count - a.stargazers_count)
-                .slice(0, 6);
-
-            if (!owned.length) {
+            if (!pinned.length) {
                 starredStatus.classList.add('error');
-                starredStatus.textContent = `No owned repositories found for @${username}.`;
+                starredStatus.textContent = `No pinned repositories found for @${username}. Run the "Update pinned repos" workflow once.`;
                 starredGrid.innerHTML = '';
                 return;
             }
 
             starredStatus.textContent = '';
-            starredGrid.innerHTML = owned.map((repo) => {
+            starredGrid.innerHTML = pinned.map((repo) => {
                 const desc = repo.description ? escapeHtml(repo.description) : 'No description provided yet.';
                 const lang = repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : '';
-                const updated = new Date(repo.pushed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+                const updated = repo.pushedAt ? new Date(repo.pushedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
 
                 return `
                     <article class="card">
                         <div class="meta">
-                            <span class="pill">⭐ ${repo.stargazers_count}</span>
-                            <span class="pill">🍴 ${repo.forks_count}</span>
+                            <span class="pill">⭐ ${repo.stars ?? 0}</span>
+                            <span class="pill">🍴 ${repo.forks ?? 0}</span>
                             ${lang}
                         </div>
                         <h3 style="margin-top: 12px; font-size: 1.2rem;">${escapeHtml(repo.name)}</h3>
                         <p class="desc">${desc}</p>
                         <div class="meta">
-                            <span>Owner · ${escapeHtml(repo.owner.login)}</span>
+                            <span>Owner · ${escapeHtml(repo.owner)}</span>
                             <span>Last push · ${updated}</span>
                         </div>
                         <div style="margin-top: 14px; display: flex; gap: 10px;">
-                            <a class="btn secondary" href="${repo.html_url}" target="_blank" rel="noreferrer">Open on GitHub</a>
+                            <a class="btn secondary" href="${repo.url}" target="_blank" rel="noreferrer">Open on GitHub</a>
                         </div>
                     </article>`;
             }).join('');
@@ -274,11 +260,12 @@
 
         async function loadHighlights() {
             try {
-                const repos = await fetchJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`);
-                renderOwnedRepos(Array.isArray(repos) ? repos : []);
+                const data = await fetchJson(`data/pinned.json?v=${Date.now()}`);
+                const pinned = data && Array.isArray(data.pinned) ? data.pinned : [];
+                renderPinned(pinned);
             } catch (err) {
                 starredStatus.classList.add('error');
-                starredStatus.textContent = `Unable to load repositories for @${username}.`;
+                starredStatus.textContent = `Unable to load pinned repositories for @${username}.`;
                 console.error(err);
             }
         }
