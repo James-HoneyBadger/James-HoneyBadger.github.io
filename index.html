@@ -231,17 +231,10 @@
                     forks: parseCount(r.forks ?? r.forks_count ?? 0)
                 }))
                 .filter((r) => Number.isFinite(r.stars))
-                .filter((r) => {
-                    const owner = (r.owner || '').toLowerCase();
-                    const link = (r.link || '').toLowerCase();
-                    const me = username.toLowerCase();
-                    const linkOwned = link.startsWith(`https://github.com/${me}/`);
-                    return owner === me && linkOwned;
-                })
                 .sort((a, b) => b.stars - a.stars);
 
             if (!ordered.length) {
-                starredStatus.textContent = `No pinned repositories owned by @${username}.`;
+                starredStatus.textContent = `No pinned repositories found for @${username}.`;
                 return;
             }
 
