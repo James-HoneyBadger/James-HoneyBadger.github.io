@@ -214,11 +214,17 @@
         function renderPinned(repos) {
             const ordered = [...repos]
                 .filter((r) => typeof r.stars === 'number')
-                .filter((r) => (r.owner || '').toLowerCase() === username.toLowerCase())
+                .filter((r) => {
+                    const owner = (r.owner || '').toLowerCase();
+                    const link = (r.link || '').toLowerCase();
+                    const me = username.toLowerCase();
+                    const linkOwned = link.startsWith(`https://github.com/${me}/`);
+                    return owner === me && linkOwned;
+                })
                 .sort((a, b) => b.stars - a.stars);
 
             if (!ordered.length) {
-                starredStatus.textContent = `No pinned repositories found for @${username}.`;
+                starredStatus.textContent = `No pinned repositories owned by @${username}.`;
                 return;
             }
 
