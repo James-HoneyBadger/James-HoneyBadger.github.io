@@ -271,20 +271,26 @@
         }
 
         async function loadPinned() {
-            try {
-                const pinned = await fetchJson(`https://gh-pinned-repos.egoist.dev/?username=${username}`);
+            const sources = [
+                `https://gh-pinned-repos.egoist.dev/?username=${username}`,
+                `https://pinned.thy.gg/api/v1/pinned?user=${username}`
+            ];
 
-                if (!Array.isArray(pinned) || !pinned.length) {
-                    starredStatus.textContent = `No pinned repositories found for @${username}.`;
-                    return;
+            for (const url of sources) {
+                try {
+                    const pinned = await fetchJson(url);
+                    if (Array.isArray(pinned) && pinned.length) {
+                        renderPinned(pinned);
+                        starredStatus.textContent = '';
+                        return;
+                    }
+                } catch (err) {
+                    console.warn('Pinned fetch failed from', url, err);
                 }
-
-                renderPinned(pinned);
-            } catch (err) {
-                starredStatus.classList.add('error');
-                starredStatus.textContent = 'Unable to load pinned repositories right now. Try again shortly or view them directly on GitHub.';
-                console.error(err);
             }
+
+            starredStatus.classList.add('error');
+            starredStatus.textContent = `No pinned repositories found for @${username} (API sources empty).`;
         }
 
         loadPinned();
