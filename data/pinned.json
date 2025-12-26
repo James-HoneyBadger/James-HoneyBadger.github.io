@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2025-12-25T18:34:54.139Z",
+  "generatedAt": "2025-12-26T00:42:36.734Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,7 @@
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2025-12-25T03:48:11Z",
+      "pushedAt": "2025-12-25T22:02:03Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -64,8 +64,8 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "HB_Language_Construction",
-      "url": "https://github.com/James-HoneyBadger/HB_Language_Construction",
+      "name": "CodeCraft",
+      "url": "https://github.com/James-HoneyBadger/CodeCraft",
       "description": "",
       "language": "Python",
       "stars": 1,
