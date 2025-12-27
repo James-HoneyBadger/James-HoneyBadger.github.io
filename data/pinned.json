@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2025-12-26T18:34:52.097Z",
+  "generatedAt": "2025-12-27T00:41:40.077Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -64,13 +64,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "CodeCraft",
-      "url": "https://github.com/James-HoneyBadger/CodeCraft",
-      "description": "",
-      "language": "Python",
-      "stars": 1,
+      "name": "HB_OS",
+      "url": "https://github.com/James-HoneyBadger/HB_OS",
+      "description": "Honey Badger OS",
+      "language": "",
+      "stars": 0,
       "forks": 0,
-      "pushedAt": "2025-12-04T18:24:34Z",
+      "pushedAt": "2025-12-26T19:49:17Z",
       "isPrivate": false,
       "isFork": false
     }
