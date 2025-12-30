@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2025-12-30T00:43:07.453Z",
+  "generatedAt": "2025-12-30T06:35:18.365Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -34,7 +34,7 @@
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2025-12-11T22:29:41Z",
+      "pushedAt": "2025-12-30T03:22:21Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -54,11 +54,11 @@
       "owner": "James-HoneyBadger",
       "name": "SagaCraft",
       "url": "https://github.com/James-HoneyBadger/SagaCraft",
-      "description": "Adventure Construction Set: Tk-based IDE and modular Python engine for building and playing text adventures.",
+      "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with CLI player, TUI editor, and GUI editor interfaces.",
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2025-12-30T00:41:07Z",
+      "pushedAt": "2025-12-30T01:16:10Z",
       "isPrivate": false,
       "isFork": false
     },
