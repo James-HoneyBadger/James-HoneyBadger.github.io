@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-01-04T18:34:59.595Z",
+  "generatedAt": "2026-01-05T00:47:40.649Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -40,13 +40,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "CodeCraft",
-      "url": "https://github.com/James-HoneyBadger/CodeCraft",
+      "name": "ParserCraft",
+      "url": "https://github.com/James-HoneyBadger/ParserCraft",
       "description": "🎨 Create custom programming languages without writing a compiler.  Visual IDE, language templates, keyword remapping, and syntax customization.  Includes TeachScript - a working educational language. Transform Python into Spanish, create BASIC-like variants, or design your own language with JSON/YAML configs.",
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-01-01T01:08:22Z",
+      "pushedAt": "2026-01-05T00:17:00Z",
       "isPrivate": false,
       "isFork": false
     },
