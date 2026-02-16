@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-02-15T18:44:52.640Z",
+  "generatedAt": "2026-02-16T00:53:43.096Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "🚀 Educational multi-language IDE supporting BASIC, PILOT, Logo, Python, C, Pascal & Prolog with turtle graphics, IoT capabilities, and modern development tools.",
+      "description": "🚀 Educational multi-language IDE supporting BASIC, PILOT, Logo, C, Pascal, Prolog & Forth with integrated turtle graphics, debugger, and themed editor. Built with Python/PySide6.",
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2026-02-15T18:37:58Z",
+      "pushedAt": "2026-02-15T18:45:55Z",
       "isPrivate": false,
       "isFork": false
     },
