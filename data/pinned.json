@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-02-16T00:53:43.096Z",
+  "generatedAt": "2026-02-16T06:44:22.856Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,7 @@
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2026-02-15T18:45:55Z",
+      "pushedAt": "2026-02-16T03:07:28Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -18,11 +18,11 @@
       "owner": "James-HoneyBadger",
       "name": "GulfOfMexico",
       "url": "https://github.com/James-HoneyBadger/GulfOfMexico",
-      "description": "Gulf Of Mexico - The Perfect Programming Language - based on Lu Wilson (TodePond)'s conceptual design",
+      "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, significant whitespace, tiered equality, temporal lifetimes, and word numbers. Based on Lu Wilson's (TodePond) design.",
       "language": "Python",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-01-06T19:02:48Z",
+      "pushedAt": "2026-02-16T03:05:18Z",
       "isPrivate": false,
       "isFork": false
     },
