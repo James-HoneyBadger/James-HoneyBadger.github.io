@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-02-19T00:53:35.683Z",
+  "generatedAt": "2026-02-19T06:41:47.736Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -34,7 +34,7 @@
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-02-18T13:53:42Z",
+      "pushedAt": "2026-02-19T03:01:16Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -42,11 +42,11 @@
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Classic",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Classic",
-      "description": "Time Warp Classic: back-to-basics Tkinter IDE for 9 vintage + modern languages with turtle graphics.",
+      "description": "Multi-language IDE supporting 9 vintage & modern languages (BASIC, Logo, Pascal, Prolog, Forth, Perl, PILOT, Python, JavaScript) with turtle graphics, syntax highlighting, and themes. Built with Python + Tkinter.",
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-01-01T01:00:00Z",
+      "pushedAt": "2026-02-19T01:25:17Z",
       "isPrivate": false,
       "isFork": false
     },
