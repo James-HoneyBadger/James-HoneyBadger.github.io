@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-03-04T18:36:53.776Z",
+  "generatedAt": "2026-03-05T00:52:54.912Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,7 @@
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2026-03-04T17:50:28Z",
+      "pushedAt": "2026-03-04T22:44:39Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -40,25 +40,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Time_Warp_II",
-      "url": "https://github.com/James-HoneyBadger/Time_Warp_II",
-      "description": "Time Warp II — a special version of Time Warp Classic, built specifically for the TempleCode language (BASIC + PILOT + Logo fusion). Educational IDE with turtle graphics, syntax highlighting, and retro-computing charm.",
-      "language": "Python",
+      "name": "HB_Scrub",
+      "url": "https://github.com/James-HoneyBadger/HB_Scrub",
+      "description": "Remove EXIF, GPS, and other metadata from images and documents. Supports JPEG, PNG, WebP, GIF, SVG, TIFF, HEIC, AVIF, PDF, MP4/MOV, and RAW formats.",
+      "language": "TypeScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-02-19T21:10:14Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "Time_Warp_Rusted",
-      "url": "https://github.com/James-HoneyBadger/Time_Warp_Rusted",
-      "description": "An educational multi-language programming environment built in Rust with 7 languages, turtle graphics, debugger, and Raspberry Pi support",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-02-24T19:14:04Z",
+      "pushedAt": "2026-03-04T03:12:22Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -71,6 +59,18 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-02-26T04:10:19Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "SagaCraft",
+      "url": "https://github.com/James-HoneyBadger/SagaCraft",
+      "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with a CLI player, TUI editor, and GPU-accelerated GUI editor.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-02-20T23:23:47Z",
       "isPrivate": false,
       "isFork": false
     }
