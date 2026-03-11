@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-03-11T12:37:16.123Z",
+  "generatedAt": "2026-03-11T18:37:45.162Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -23,18 +23,6 @@
       "stars": 4,
       "forks": 0,
       "pushedAt": "2026-02-16T03:05:18Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "HB_Moxie",
-      "url": "https://github.com/James-HoneyBadger/HB_Moxie",
-      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-03-10T23:17:29Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -71,6 +59,18 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-02-26T04:10:19Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "ParserCraft",
+      "url": "https://github.com/James-HoneyBadger/ParserCraft",
+      "description": "A Python framework for building programming languages — PEG grammars, multi-backend codegen (Python, C, WASM, LLVM IR), REPL, StdLib, FFI, IDE & CLI.",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-02-20T04:03:21Z",
       "isPrivate": false,
       "isFork": false
     }
