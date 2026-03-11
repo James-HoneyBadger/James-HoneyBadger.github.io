@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-03-10T18:36:57.869Z",
+  "generatedAt": "2026-03-11T00:49:25.137Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -28,13 +28,25 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Time_Warp_Classic",
-      "url": "https://github.com/James-HoneyBadger/Time_Warp_Classic",
-      "description": "Multi-language IDE supporting 9 vintage & modern languages (BASIC, Logo, Pascal, Prolog, Forth, Perl, PILOT, Python, JavaScript) with turtle graphics, syntax highlighting, and themes. Built with Python + Tkinter.",
-      "language": "Python",
+      "name": "HB_Moxie",
+      "url": "https://github.com/James-HoneyBadger/HB_Moxie",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-02-24T22:04:30Z",
+      "pushedAt": "2026-03-10T23:17:29Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "HB_Zayfer",
+      "url": "https://github.com/James-HoneyBadger/HB_Zayfer",
+      "description": "Full-featured encryption/decryption suite — AES-256-GCM, ChaCha20-Poly1305, RSA, Ed25519, X25519, OpenPGP | Rust core + Python bindings | CLI, GUI (PySide6), Web (FastAPI)",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-03-10T18:59:19Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -59,18 +71,6 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-02-26T04:10:19Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "SagaCraft",
-      "url": "https://github.com/James-HoneyBadger/SagaCraft",
-      "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with a CLI player, TUI editor, and GPU-accelerated GUI editor.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-03-05T21:04:00Z",
       "isPrivate": false,
       "isFork": false
     }
