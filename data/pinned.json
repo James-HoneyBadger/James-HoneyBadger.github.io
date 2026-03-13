@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-03-12T18:37:33.124Z",
+  "generatedAt": "2026-03-13T00:51:40.662Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,7 @@
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2026-03-06T18:39:26Z",
+      "pushedAt": "2026-03-12T21:09:52Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -64,13 +64,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "ParserCraft",
-      "url": "https://github.com/James-HoneyBadger/ParserCraft",
-      "description": "A Python framework for building programming languages — PEG grammars, multi-backend codegen (Python, C, WASM, LLVM IR), REPL, StdLib, FFI, IDE & CLI.",
-      "language": "Python",
+      "name": "SagaCraft",
+      "url": "https://github.com/James-HoneyBadger/SagaCraft",
+      "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with a CLI player, TUI editor, and GPU-accelerated GUI editor.",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-02-20T04:03:21Z",
+      "pushedAt": "2026-03-05T21:04:00Z",
       "isPrivate": false,
       "isFork": false
     }
