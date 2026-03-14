@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-03-14T00:49:58.157Z",
+  "generatedAt": "2026-03-14T06:36:48.298Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,7 @@
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2026-03-12T21:09:52Z",
+      "pushedAt": "2026-03-14T03:43:37Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -18,11 +18,11 @@
       "owner": "James-HoneyBadger",
       "name": "GulfOfMexico",
       "url": "https://github.com/James-HoneyBadger/GulfOfMexico",
-      "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, significant whitespace, tiered equality, temporal lifetimes, and word numbers. Based on Lu Wilson's (TodePond) design.",
+      "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, tiered & tilde equality, temporal lifetimes, compound assignment, emoji identifiers, negative hoisting, and a 5-theme GUI IDE. 170 tests, 26 demos. Based on Lu Wilson's (TodePond) DreamBerd spec.",
       "language": "Python",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-02-16T03:05:18Z",
+      "pushedAt": "2026-03-14T02:13:55Z",
       "isPrivate": false,
       "isFork": false
     },
