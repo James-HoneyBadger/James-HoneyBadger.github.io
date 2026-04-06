@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-06T12:39:06.554Z",
+  "generatedAt": "2026-04-06T18:37:51.750Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -28,13 +28,37 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "HB_Zayfer",
-      "url": "https://github.com/James-HoneyBadger/HB_Zayfer",
-      "description": "Full-featured encryption/decryption suite — AES-256-GCM, ChaCha20-Poly1305, RSA, Ed25519, X25519, OpenPGP | Rust core + Python bindings | CLI, GUI (PySide6), Web (FastAPI)",
-      "language": "Rust",
+      "name": "Mellivora_OS",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
+      "description": "",
+      "language": "",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-04-04T14:56:25Z",
+      "pushedAt": "2026-04-06T13:41:35Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Time_Warp_Classic",
+      "url": "https://github.com/James-HoneyBadger/Time_Warp_Classic",
+      "description": "Multi-language IDE supporting 9 vintage & modern languages (BASIC, Logo, Pascal, Prolog, Forth, Perl, PILOT, Python, JavaScript) with turtle graphics, syntax highlighting, and themes. Built with Python + Tkinter.",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-04-04T17:05:25Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Time_Warp_II",
+      "url": "https://github.com/James-HoneyBadger/Time_Warp_II",
+      "description": "Time Warp II — a special version of Time Warp Classic, built specifically for the TempleCode language (BASIC + PILOT + Logo fusion). Educational IDE with turtle graphics, syntax highlighting, and retro-computing charm.",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-04-02T00:54:28Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -47,30 +71,6 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-03-26T15:35:52Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "LifeGrid",
-      "url": "https://github.com/James-HoneyBadger/LifeGrid",
-      "description": "Full-featured cellular automaton simulator with 6 game modes including Conway's Game of Life, High Life, Immigration Game, Rainbow Game, Langton's Ant, and Custom Rules. Features 20+ built-in patterns, interactive drawing tools, symmetry modes, and pattern save/load.",
-      "language": "Python",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-02-26T04:10:19Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "SagaCraft",
-      "url": "https://github.com/James-HoneyBadger/SagaCraft",
-      "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with a CLI player, TUI editor, and GPU-accelerated GUI editor.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-03-05T21:04:00Z",
       "isPrivate": false,
       "isFork": false
     }
