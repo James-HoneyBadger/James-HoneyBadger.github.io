@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-12T01:03:59.494Z",
+  "generatedAt": "2026-04-12T06:51:20.778Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -30,11 +30,11 @@
       "owner": "James-HoneyBadger",
       "name": "Mellivora_OS",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
-      "description": "Bare-metal 32-bit x86 OS in NASM assembly — Burrows desktop environment, preemptive multitasking, virtual memory, custom HBFS filesystem, C compiler, 66 programs, 660 regression tests. Boots on real i486+ hardware or QEMU.",
+      "description": "Bare-metal 32-bit x86 OS in NASM assembly — TCP/IP networking, Burrows desktop environment, preemptive multitasking, virtual memory, HBFS filesystem, C compiler, 79 programs, 709 regression tests. Boots on real i486+ hardware or QEMU.",
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-04-12T01:00:28Z",
+      "pushedAt": "2026-04-12T01:57:17Z",
       "isPrivate": false,
       "isFork": false
     },
