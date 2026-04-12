@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-12T12:37:15.202Z",
+  "generatedAt": "2026-04-12T18:36:34.169Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -16,18 +16,6 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "GulfOfMexico",
-      "url": "https://github.com/James-HoneyBadger/GulfOfMexico",
-      "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, tiered & tilde equality, temporal lifetimes, compound assignment, emoji identifiers, negative hoisting, and a 5-theme GUI IDE. 170 tests, 26 demos. Based on Lu Wilson's (TodePond) DreamBerd spec.",
-      "language": "Python",
-      "stars": 4,
-      "forks": 0,
-      "pushedAt": "2026-03-26T15:49:06Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
       "name": "Mellivora_OS",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
       "description": "Bare-metal 32-bit x86 OS in NASM assembly — TCP/IP networking, Burrows desktop environment, preemptive multitasking, virtual memory, HBFS filesystem, C compiler, 79 programs, 709 regression tests. Boots on real i486+ hardware or QEMU.",
@@ -35,6 +23,18 @@
       "stars": 4,
       "forks": 0,
       "pushedAt": "2026-04-12T01:57:17Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "GulfOfMexico",
+      "url": "https://github.com/James-HoneyBadger/GulfOfMexico",
+      "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, tiered & tilde equality, temporal lifetimes, compound assignment, emoji identifiers, negative hoisting, and a 5-theme GUI IDE. 170 tests, 26 demos. Based on Lu Wilson's (TodePond) DreamBerd spec.",
+      "language": "Python",
+      "stars": 4,
+      "forks": 0,
+      "pushedAt": "2026-03-26T15:49:06Z",
       "isPrivate": false,
       "isFork": false
     },
