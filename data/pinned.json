@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-17T01:04:27.604Z",
+  "generatedAt": "2026-04-17T07:01:51.667Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -54,11 +54,11 @@
       "owner": "James-HoneyBadger",
       "name": "Mellivora_OS_Classic",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS_Classic",
-      "description": "",
-      "language": "",
+      "description": "A bare-metal 32-bit x86 operating system written entirely in NASM assembly.",
+      "language": "Assembly",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-04-17T00:30:18Z",
+      "pushedAt": "2026-04-17T01:42:59Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -66,11 +66,11 @@
       "owner": "James-HoneyBadger",
       "name": "Mellivora_OS_PicoCalc",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "",
-      "language": "",
+      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
+      "language": "Makefile",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-04-16T15:48:44Z",
+      "pushedAt": "2026-04-17T01:23:00Z",
       "isPrivate": false,
       "isFork": false
     }
