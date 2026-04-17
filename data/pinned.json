@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-16T18:45:29.277Z",
+  "generatedAt": "2026-04-17T01:04:27.604Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -22,7 +22,7 @@
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-04-16T15:04:19Z",
+      "pushedAt": "2026-04-17T01:02:51Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -40,18 +40,6 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Mellivora_OS_PicoCalc",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "",
-      "language": "",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-04-16T15:48:44Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
       "name": "Time_Warp_II",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_II",
       "description": "Time Warp II — a special version of Time Warp Classic, built specifically for the TempleCode language (BASIC + PILOT + Logo fusion). Educational IDE with turtle graphics, syntax highlighting, and retro-computing charm.",
@@ -64,13 +52,25 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "HB_Scrub",
-      "url": "https://github.com/James-HoneyBadger/HB_Scrub",
-      "description": "Remove EXIF, GPS, and other metadata from images and documents. Supports JPEG, PNG, WebP, GIF, SVG, TIFF, HEIC, AVIF, PDF, MP4/MOV, and RAW formats.",
-      "language": "TypeScript",
+      "name": "Mellivora_OS_Classic",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_Classic",
+      "description": "",
+      "language": "",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-03-26T15:35:52Z",
+      "pushedAt": "2026-04-17T00:30:18Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Mellivora_OS_PicoCalc",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
+      "description": "",
+      "language": "",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-04-16T15:48:44Z",
       "isPrivate": false,
       "isFork": false
     }
