@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-20T01:05:16.779Z",
+  "generatedAt": "2026-04-20T07:07:40.380Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -40,6 +40,18 @@
     },
     {
       "owner": "James-HoneyBadger",
+      "name": "Mellivora_OS_PicoCalc",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
+      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
+      "language": "Makefile",
+      "stars": 2,
+      "forks": 0,
+      "pushedAt": "2026-04-20T01:02:33Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
       "name": "Time_Warp_II",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_II",
       "description": "Time Warp II — a special version of Time Warp Classic, built specifically for the TempleCode language (BASIC + PILOT + Logo fusion). Educational IDE with turtle graphics, syntax highlighting, and retro-computing charm.",
@@ -59,18 +71,6 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-04-18T02:25:43Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "Mellivora_OS_PicoCalc",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
-      "language": "Makefile",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-04-20T01:02:33Z",
       "isPrivate": false,
       "isFork": false
     }
