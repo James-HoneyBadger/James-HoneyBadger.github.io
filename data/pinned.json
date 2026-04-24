@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-04-24T12:42:55.630Z",
+  "generatedAt": "2026-04-24T18:36:53.224Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -18,11 +18,23 @@
       "owner": "James-HoneyBadger",
       "name": "Mellivora_OS",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
-      "description": "A bare-metal 64-bit x86-64 hobby OS written entirely in NASM assembly. Features a custom filesystem, TCP/IP stack, preemptive multitasking, Burrows desktop, 140 programs, and 84 syscalls.",
+      "description": "Mellivora OS is a from-scratch hobby OS that boots on real x86 hardware or in QEMU. It includes a custom HBFS filesystem, ring 3 user-mode execution, a DOS-inspired interactive shell with POSIX features, 82 syscalls, priority-based preemptive scheduling, signal support, an in-OS Tiny C Compiler",
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-04-24T02:12:57Z",
+      "pushedAt": "2026-04-24T15:05:28Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Mellivora_OS_PicoCalc",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
+      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
+      "language": "C",
+      "stars": 4,
+      "forks": 0,
+      "pushedAt": "2026-04-23T02:48:39Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -40,18 +52,6 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Mellivora_OS_PicoCalc",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
-      "language": "C",
-      "stars": 3,
-      "forks": 0,
-      "pushedAt": "2026-04-23T02:48:39Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
       "name": "Time_Warp_II",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_II",
       "description": "Time Warp II — a special version of Time Warp Classic, built specifically for the TempleCode language (BASIC + PILOT + Logo fusion). Educational IDE with turtle graphics, syntax highlighting, and retro-computing charm.",
@@ -59,18 +59,6 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-04-02T00:54:28Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "Mellivora_OS_32bit",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_32bit",
-      "description": "A bare-metal 32-bit x86 operating system written entirely in NASM assembly.",
-      "language": "Assembly",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-04-18T02:25:43Z",
       "isPrivate": false,
       "isFork": false
     }
