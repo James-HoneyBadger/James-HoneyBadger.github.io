@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-06-27T01:19:17.464Z",
+  "generatedAt": "2026-06-27T07:27:14.006Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -20,7 +20,7 @@
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
       "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
       "language": "C",
-      "stars": 6,
+      "stars": 7,
       "forks": 1,
       "pushedAt": "2026-05-18T20:38:10Z",
       "isPrivate": false,
