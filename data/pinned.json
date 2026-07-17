@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-07-17T12:45:34.885Z",
+  "generatedAt": "2026-07-17T18:41:16.453Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -64,8 +64,8 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Zayfer_Vault",
-      "url": "https://github.com/James-HoneyBadger/Zayfer_Vault",
+      "name": "DarkStar",
+      "url": "https://github.com/James-HoneyBadger/DarkStar",
       "description": "Rust-first encryption suite with CLI, desktop GUI, browser platform, and HBZF secure container support.",
       "language": "Rust",
       "stars": 1,
