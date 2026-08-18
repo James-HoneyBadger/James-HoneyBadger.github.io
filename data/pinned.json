@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-08-17T12:35:44.916Z",
+  "generatedAt": "2026-08-18T00:36:56.007Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -64,8 +64,8 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "DarkStar",
-      "url": "https://github.com/James-HoneyBadger/DarkStar",
+      "name": "HB_Shield",
+      "url": "https://github.com/James-HoneyBadger/HB_Shield",
       "description": "Rust-first encryption suite with CLI, desktop GUI, browser platform, and HBZF secure container support.",
       "language": "Rust",
       "stars": 1,
