@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-08-28T16:32:06.279Z",
+  "generatedAt": "2026-08-28T21:36:33.071Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -11,18 +11,6 @@
       "stars": 22,
       "forks": 1,
       "pushedAt": "2026-07-23T16:23:59Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "Mellivora_OS_PicoCalc",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
-      "language": "C",
-      "stars": 7,
-      "forks": 1,
-      "pushedAt": "2026-05-18T20:38:10Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -52,25 +40,37 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Time_Warp_II",
-      "url": "https://github.com/James-HoneyBadger/Time_Warp_II",
-      "description": "Time Warp II — a special version of Time Warp Classic, built specifically for the TempleCode language (BASIC + PILOT + Logo fusion). Educational IDE with turtle graphics, syntax highlighting, and retro-computing charm.",
+      "name": "LifeGrid",
+      "url": "https://github.com/James-HoneyBadger/LifeGrid",
+      "description": "A feature-rich cellular automata simulator with a modern Tkinter GUI, headless CLI, REST/WebSocket API, GPU acceleration, and plugin support.",
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-05-22T03:17:21Z",
+      "pushedAt": "2026-08-18T16:03:26Z",
       "isPrivate": false,
       "isFork": false
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "HB_Shield",
-      "url": "https://github.com/James-HoneyBadger/HB_Shield",
-      "description": "Rust-first encryption suite with CLI, desktop GUI, browser platform, and HBZF secure container support.",
-      "language": "Rust",
+      "name": "Pebble_Pal",
+      "url": "https://github.com/James-HoneyBadger/Pebble_Pal",
+      "description": "🪨 Virtual pet stone companion — feed, play, customize & level up your rock! Desktop (Electron) + iOS/Android (Capacitor). Vanilla HTML/CSS/JS.",
+      "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-07-19T19:21:18Z",
+      "pushedAt": "2026-05-11T19:25:05Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Lake_Ontario",
+      "url": "https://github.com/James-HoneyBadger/Lake_Ontario",
+      "description": "Lake Ontario BASIC is a whimsical, and satirical programming language built in the spirit of classic BASIC — infused with politeness, progressive values, and a fearless Honey Badger attitude that takes zero shit from MAGA spin, GOP propaganda, or oligarch intimidation.  In Lake Ontario, alternative facts don't compile, universal healthcare protects",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-08-28T21:07:56Z",
       "isPrivate": false,
       "isFork": false
     }
