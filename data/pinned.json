@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-09-24T18:35:44.717Z",
+  "generatedAt": "2026-09-25T01:03:20.996Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -42,11 +42,11 @@
       "owner": "James-HoneyBadger",
       "name": "LifeGrid",
       "url": "https://github.com/James-HoneyBadger/LifeGrid",
-      "description": "A feature-rich cellular automata simulator with a modern Tkinter GUI, headless CLI, REST/WebSocket API, GPU acceleration, and plugin support.",
-      "language": "Python",
+      "description": "A fast, native cellular-automaton simulator built with Rust and egui.  LifeGrid runs ten classic and custom automata in a single interactive window, with pattern loading, custom B/S rules, PNG/GIF export, undo/redo, and three boundary modes.",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-08-18T16:03:26Z",
+      "pushedAt": "2026-09-24T20:52:47Z",
       "isPrivate": false,
       "isFork": false
     },
