@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-01T18:39:16.978Z",
+  "generatedAt": "2026-10-02T01:08:07.912Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "Time Warp Studio is a unified desktop programming environment designed for educators and students. It brings together 24 programming languages spanning seven decades of computing history into a single, modern IDE. Built with Python and PySide6 (Qt6), it provides an integrated platform for learning programming concepts, exploring vector turtle graph",
+      "description": "Time Warp Studio is a unified desktop programming environment designed for educators and students. It brings together 9 active programming languages into a single, modern IDE. Built with Python and PySide6 (Qt6), it provides an integrated platform for learning programming concepts, exploring vector turtle graphics, and working through structured le",
       "language": "Python",
       "stars": 22,
       "forks": 1,
-      "pushedAt": "2026-07-23T16:23:59Z",
+      "pushedAt": "2026-10-01T21:22:33Z",
       "isPrivate": false,
       "isFork": false
     },
