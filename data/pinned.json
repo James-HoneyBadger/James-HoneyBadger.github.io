@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-11T12:43:21.043Z",
+  "generatedAt": "2026-10-11T18:37:51.218Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -30,11 +30,11 @@
       "owner": "James-HoneyBadger",
       "name": "Mellivora_OS",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
-      "description": "Mellivora OS is a from-scratch hobby OS that boots on real x86 hardware or in QEMU. It includes a custom HBFS filesystem, ring 3 user-mode execution, a DOS-inspired interactive shell with POSIX features, 82 syscalls, priority-based preemptive scheduling, signal support, an in-OS Tiny C Compiler",
+      "description": "Mellivora OS is a from-scratch hobby OS that boots on real x86 hardware or in QEMU. It includes a custom HBFS v3 filesystem with permissions and xattr, ring 3 user-mode execution, a DOS-inspired interactive shell with POSIX features,",
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-06-15T20:20:56Z",
+      "pushedAt": "2026-10-11T18:01:17Z",
       "isPrivate": false,
       "isFork": false
     },
