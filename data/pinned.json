@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-12T18:40:41.813Z",
+  "generatedAt": "2026-10-13T01:14:40.819Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -8,7 +8,7 @@
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
       "description": "Time Warp Studio is a unified desktop programming environment designed for educators and students. It brings together 9 active programming languages into a single, modern IDE. Built with Python and PySide6 (Qt6), it provides an integrated platform for learning programming concepts, exploring vector turtle graphics, and working through structured le",
       "language": "Python",
-      "stars": 23,
+      "stars": 24,
       "forks": 1,
       "pushedAt": "2026-10-01T21:22:33Z",
       "isPrivate": false,
@@ -20,7 +20,7 @@
       "url": "https://github.com/James-HoneyBadger/GulfOfMexico",
       "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, tiered & tilde equality, temporal lifetimes, compound assignment, emoji identifiers, negative hoisting, and a 5-theme GUI IDE. 170 tests, 26 demos. Based on Lu Wilson's (TodePond) DreamBerd spec.",
       "language": "Python",
-      "stars": 5,
+      "stars": 6,
       "forks": 0,
       "pushedAt": "2026-06-09T16:35:02Z",
       "isPrivate": false,
