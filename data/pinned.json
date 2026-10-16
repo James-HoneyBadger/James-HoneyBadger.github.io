@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-15T18:37:02.983Z",
+  "generatedAt": "2026-10-16T00:58:32.624Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,19 @@
       "language": "Python",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-10-15T18:29:47Z",
+      "pushedAt": "2026-10-15T18:52:56Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Mellivora_OS_PicoCalc",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
+      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
+      "language": "C",
+      "stars": 7,
+      "forks": 1,
+      "pushedAt": "2026-09-23T17:43:12Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -40,37 +52,25 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "LifeGrid",
-      "url": "https://github.com/James-HoneyBadger/LifeGrid",
-      "description": "A fast, native cellular-automaton simulator built with Rust and egui.  LifeGrid runs ten classic and custom automata in a single interactive window, with pattern loading, custom B/S rules, PNG/GIF export, undo/redo, and three boundary modes.",
+      "name": "NakiByte",
+      "url": "https://github.com/James-HoneyBadger/NakiByte",
+      "description": "Remove EXIF, GPS, and other metadata from images and documents. Supports JPEG, PNG, WebP, GIF, SVG, TIFF, HEIC, AVIF, PDF, MP4/MOV, and RAW formats.",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-08-22T13:47:04Z",
+      "isPrivate": false,
+      "isFork": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "Zayfer_Vault",
+      "url": "https://github.com/James-HoneyBadger/Zayfer_Vault",
+      "description": "Rust-first encryption suite with CLI, desktop GUI, browser platform, and HBZF secure container support.",
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-09-24T20:52:47Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "Pebble_Pal",
-      "url": "https://github.com/James-HoneyBadger/Pebble_Pal",
-      "description": "🪨 Virtual pet stone companion — feed, play, customize & level up your rock! Desktop (Electron) + iOS/Android (Capacitor). Vanilla HTML/CSS/JS.",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-05-11T19:25:05Z",
-      "isPrivate": false,
-      "isFork": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "Lake_Ontario",
-      "url": "https://github.com/James-HoneyBadger/Lake_Ontario",
-      "description": "Lake Ontario BASIC is a whimsical, and satirical programming language built in the spirit of classic BASIC — infused with politeness, progressive values, and a fearless Honey Badger attitude that takes zero shit from MAGA spin, GOP propaganda, or oligarch intimidation.  In Lake Ontario, alternative facts don't compile, universal healthcare protects",
-      "language": "Python",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-09-03T03:28:38Z",
+      "pushedAt": "2026-07-19T19:21:18Z",
       "isPrivate": false,
       "isFork": false
     }
