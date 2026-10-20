@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-20T12:43:20.945Z",
+  "generatedAt": "2026-10-20T18:36:52.338Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "Time Warp Studio is a unified desktop programming environment designed for educators and students. It brings together 10 active programming languages into a single, modern IDE. Built as a native C++20 / Qt6 application, it provides an integrated platform for learning programming concepts, exploring turtle graphics, and working through a checked les",
+      "description": "Time Warp Studio is a native C++20/Qt6 workbench for people who like old computers. It is the programming environment the 1980s promised and never quite delivered: a full IDE, ten interpreters spanning 1964 to 1980, a turtle canvas, a debugger that works in every one of them — and, inside it, two complete machines.",
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-10-20T02:08:35Z",
+      "pushedAt": "2026-10-20T18:15:37Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -46,7 +46,7 @@
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-10-20T12:37:37Z",
+      "pushedAt": "2026-10-20T15:47:16Z",
       "isPrivate": false,
       "isFork": false
     },
