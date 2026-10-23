@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-23T06:47:49.100Z",
+  "generatedAt": "2026-10-23T12:41:41.433Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "Time Warp Studio is a native C++20/Qt6 workbench for people who like old computers. It is the programming environment the 1980s promised and never quite delivered: a full IDE, ten interpreters spanning 1964 to 1980, a turtle canvas, a debugger that works in every one of them — and, inside it, two complete machines.",
+      "description": "An old-school programming environment: eleven interpreters from 1964-1980, a full IDE, a debugger in every language and turtle graphics -- plus two complete machines, the HB-1 home computer of 1982 with its own disk OS, and a live CHIP-8 with an assembler and register inspector.",
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-10-22T17:57:20Z",
+      "pushedAt": "2026-10-23T12:35:37Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -46,7 +46,7 @@
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-10-23T03:12:01Z",
+      "pushedAt": "2026-10-23T10:53:23Z",
       "isPrivate": false,
       "isFork": false
     },
