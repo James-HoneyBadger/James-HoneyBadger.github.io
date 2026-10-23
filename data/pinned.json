@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-23T12:41:41.433Z",
+  "generatedAt": "2026-10-23T18:38:09.928Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -10,7 +10,7 @@
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-10-23T12:35:37Z",
+      "pushedAt": "2026-10-23T13:59:31Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -34,7 +34,7 @@
       "language": "Python",
       "stars": 6,
       "forks": 0,
-      "pushedAt": "2026-06-09T16:35:02Z",
+      "pushedAt": "2026-10-23T16:03:48Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -52,25 +52,25 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "NakiByte",
-      "url": "https://github.com/James-HoneyBadger/NakiByte",
-      "description": "Remove EXIF, GPS, and other metadata from images and documents. Supports JPEG, PNG, WebP, GIF, SVG, TIFF, HEIC, AVIF, PDF, MP4/MOV, and RAW formats.",
-      "language": "TypeScript",
+      "name": "LifeGrid",
+      "url": "https://github.com/James-HoneyBadger/LifeGrid",
+      "description": "A fast, native cellular-automaton simulator built with Rust and egui.  LifeGrid runs ten classic and custom automata in a single interactive window, with pattern loading, custom B/S rules, PNG/GIF export, undo/redo, and three boundary modes.",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-08-22T13:47:04Z",
+      "pushedAt": "2026-09-24T20:52:47Z",
       "isPrivate": false,
       "isFork": false
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "Zayfer_Vault",
-      "url": "https://github.com/James-HoneyBadger/Zayfer_Vault",
-      "description": "Rust-first encryption suite with CLI, desktop GUI, browser platform, and HBZF secure container support.",
+      "name": "Mellivora_ToolKit",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_ToolKit",
+      "description": "",
       "language": "Rust",
-      "stars": 1,
+      "stars": 0,
       "forks": 0,
-      "pushedAt": "2026-07-19T19:21:18Z",
+      "pushedAt": "2026-10-23T17:25:22Z",
       "isPrivate": false,
       "isFork": false
     }
