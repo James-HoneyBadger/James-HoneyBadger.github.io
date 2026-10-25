@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-24T18:33:34.086Z",
+  "generatedAt": "2026-10-25T01:06:01.047Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -46,7 +46,7 @@
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-10-24T17:16:22Z",
+      "pushedAt": "2026-10-25T00:56:58Z",
       "isPrivate": false,
       "isFork": false
     },
@@ -64,13 +64,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "LifeGrid",
-      "url": "https://github.com/James-HoneyBadger/LifeGrid",
-      "description": "A fast, native cellular-automaton simulator built with Rust and egui.  LifeGrid runs ten classic and custom automata in a single interactive window, with pattern loading, custom B/S rules, PNG/GIF export, undo/redo, and three boundary modes.",
+      "name": "TesseraGrid",
+      "url": "https://github.com/James-HoneyBadger/TesseraGrid",
+      "description": "Tessera Grid — a fast Rust/egui cellular-automata simulator with 10 rule sets, 8 themes, headless CLI and PNG/GIF/RLE export",
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-09-24T20:52:47Z",
+      "pushedAt": "2026-10-25T00:05:58Z",
       "isPrivate": false,
       "isFork": false
     }
