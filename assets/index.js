@@ -38,7 +38,7 @@ function render(repos) {
 
   if (!pinned.length) {
     status.classList.add('error');
-    status.innerHTML = `No pinned repositories found for @${OWNER}. Run the "Update pinned repos" workflow once.`;
+    status.textContent = `No pinned repositories owned by @${OWNER} were found in the snapshot.`;
     grid.innerHTML = '';
     return;
   }
@@ -75,9 +75,20 @@ async function load() {
 
   try {
     const data = await fetchJson(`${SOURCE}?v=${bucket}`);
-    const pinned = data && Array.isArray(data.pinned) ? data.pinned : [];
-    render(pinned);
-    writeCache(CACHE_KEY, { pinned, generatedAt: data?.generatedAt || null, savedAt: Date.now() });
+
+    if (!data || !Array.isArray(data.pinned)) {
+      throw new Error('The pinned snapshot has an unexpected shape.');
+    }
+    if (data.pinned.length === 0) {
+      throw new Error('The pinned snapshot is empty.');
+    }
+
+    render(data.pinned);
+    writeCache(CACHE_KEY, {
+      pinned: data.pinned,
+      generatedAt: data.generatedAt || null,
+      savedAt: Date.now(),
+    });
   } catch (error) {
     showError(error);
   }

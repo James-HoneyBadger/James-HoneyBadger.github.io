@@ -212,7 +212,7 @@ function checkJs(file) {
 const isIso = (value) =>
   typeof value === 'string' && value.endsWith('Z') && !Number.isNaN(Date.parse(value));
 
-function checkData(file, collection, fields) {
+function checkData(file, collection, fields, { minimum = 1 } = {}) {
   let data;
   try {
     data = JSON.parse(read(file));
@@ -223,6 +223,15 @@ function checkData(file, collection, fields) {
   if (typeof data.user !== 'string' || !data.user) fail(file, 'missing "user"');
   if (!isIso(data.generatedAt)) fail(file, '"generatedAt" must be an ISO UTC timestamp');
   if (!Array.isArray(data[collection])) return fail(file, `missing "${collection}" array`);
+
+  // An empty list renders as a blank panel, so treat it as a build failure.
+  if (data[collection].length < minimum) {
+    fail(
+      file,
+      `"${collection}" has ${data[collection].length} entries, expected at least ${minimum}`,
+    );
+    return;
+  }
 
   data[collection].forEach((row, index) => {
     for (const [field, type] of Object.entries(fields)) {
