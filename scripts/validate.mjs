@@ -255,6 +255,31 @@ function checkData(file, collection, fields, { minimum = 1 } = {}) {
   }
 }
 
+const TEXT_ASSETS = [
+  'index.html',
+  'repos.html',
+  '404.html',
+  'styles.css',
+  'favicon.svg',
+  ...fs
+    .readdirSync(path.join(ROOT, 'assets'))
+    .filter((name) => name.endsWith('.js'))
+    .map((name) => path.join('assets', name)),
+];
+const TEXT_BUDGET_KB = 140;
+
+/** Keeps the shipped HTML/CSS/JS from quietly growing. */
+function checkBudget() {
+  const total = TEXT_ASSETS.reduce((sum, file) => sum + fs.statSync(path.join(ROOT, file)).size, 0);
+  const kb = total / 1024;
+
+  if (kb > TEXT_BUDGET_KB) {
+    fail('budget', `text assets are ${kb.toFixed(1)} KB, over the ${TEXT_BUDGET_KB} KB budget`);
+  }
+
+  return kb;
+}
+
 // --- run ---
 
 for (const page of PAGES) checkHtml(page);
@@ -302,6 +327,8 @@ checkData('data/repos.json', 'repos', {
   homepage: 'string',
 });
 
+const budgetKb = checkBudget();
+
 if (errors.length) {
   console.error(`✗ ${errors.length} problem(s) found:`);
   for (const error of errors) console.error(`  - ${error}`);
@@ -309,5 +336,5 @@ if (errors.length) {
 }
 
 console.log(
-  `✓ ${PAGES.length} pages, styles.css, sitemap/robots, ${jsFiles.length} scripts and 2 data files look good`,
+  `✓ ${PAGES.length} pages, styles.css, sitemap/robots, ${jsFiles.length} scripts and 2 data files look good (${budgetKb.toFixed(1)} KB of text assets)`,
 );

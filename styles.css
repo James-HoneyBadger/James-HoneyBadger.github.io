@@ -322,11 +322,102 @@ header.hero {
 }
 
 .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--muted);
   font-size: 0.85rem;
   border: 1px solid var(--border);
   padding: 6px 8px;
   border-radius: 10px;
+}
+
+/* Language swatch; purely decorative, the language name carries the meaning. */
+.lang-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dot, var(--muted));
+}
+
+.lang-dot[data-lang='c'] {
+  --dot: #555555;
+}
+.lang-dot[data-lang='c++'] {
+  --dot: #f34b7d;
+}
+.lang-dot[data-lang='rust'] {
+  --dot: #dea584;
+}
+.lang-dot[data-lang='python'] {
+  --dot: #3572a5;
+}
+.lang-dot[data-lang='javascript'] {
+  --dot: #f1e05a;
+}
+.lang-dot[data-lang='typescript'] {
+  --dot: #3178c6;
+}
+.lang-dot[data-lang='go'] {
+  --dot: #00add8;
+}
+.lang-dot[data-lang='shell'] {
+  --dot: #89e051;
+}
+.lang-dot[data-lang='html'] {
+  --dot: #e34c26;
+}
+.lang-dot[data-lang='css'] {
+  --dot: #563d7c;
+}
+.lang-dot[data-lang='assembly'] {
+  --dot: #6e4c13;
+}
+.lang-dot[data-lang='java'] {
+  --dot: #b07219;
+}
+.lang-dot[data-lang='ruby'] {
+  --dot: #701516;
+}
+.lang-dot[data-lang='c#'] {
+  --dot: #178600;
+}
+.lang-dot[data-lang='php'] {
+  --dot: #4f5d95;
+}
+.lang-dot[data-lang='swift'] {
+  --dot: #f05138;
+}
+.lang-dot[data-lang='kotlin'] {
+  --dot: #a97bff;
+}
+.lang-dot[data-lang='zig'] {
+  --dot: #ec915c;
+}
+.lang-dot[data-lang='haskell'] {
+  --dot: #5e5086;
+}
+.lang-dot[data-lang='lua'] {
+  --dot: #2c2d72;
+}
+.lang-dot[data-lang='nix'] {
+  --dot: #7e7eff;
+}
+.lang-dot[data-lang='makefile'] {
+  --dot: #427819;
+}
+.lang-dot[data-lang='dockerfile'] {
+  --dot: #384d54;
+}
+.lang-dot[data-lang='vue'] {
+  --dot: #41b883;
+}
+.lang-dot[data-lang='svelte'] {
+  --dot: #ff3e00;
+}
+.lang-dot[data-lang='dart'] {
+  --dot: #00b4ab;
 }
 
 /* The repos cards inherit their pill colour from .meta; the highlights cards set it explicitly. */
