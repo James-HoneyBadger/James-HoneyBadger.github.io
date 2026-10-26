@@ -15,7 +15,9 @@ without it the pages explain themselves and link to GitHub.
 
 ```
 index.html, repos.html   markup only; no inline CSS or JS
-styles.css               all styling, including the self-hosted @font-face
+404.html                 branded not-found page (root-absolute paths)
+styles.css               all styling, both colour schemes, self-hosted @font-face
+sitemap.xml, robots.txt  crawl hints for the two real pages
 assets/shared.js         escaping, URL safety, dates, cache, fetch, card fragments
 assets/repos.js          the directory: filters, sorts, URL state, cache, errors
 assets/index.js          the highlights page
@@ -75,7 +77,10 @@ Tooling (`npm ci` once):
 ## Notes
 
 - No third-party requests: fonts are self-hosted, so there is no Google Fonts dependency.
-- Contrast for all text pairings is at least 6.9:1 on the dark palette.
+- Dark and light palettes both follow `prefers-color-scheme`; every text pairing passes WCAG AA,
+  with the lowest light-mode ratio at 4.9:1 (links on the page background) and 6.9:1 in dark mode.
+- Both content pages carry JSON-LD (`ProfilePage` on the highlights, `CollectionPage` on the
+  directory) and `sitemap.xml` lists only the two real pages; `404.html` is `noindex`.
 - Prettier does not format the generated `data/*.json` files (see `.prettierignore`).
 
 Site: https://james-honeybadger.github.io

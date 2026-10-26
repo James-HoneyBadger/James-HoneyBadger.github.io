@@ -6,7 +6,8 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
 const ROOT = process.cwd();
-const PAGES = ['index.html', 'repos.html'];
+const PAGES = ['index.html', 'repos.html', '404.html'];
+const CONTENT_PAGES = ['index.html', 'repos.html'];
 const VOID = new Set(
   'area base br col embed hr img input link meta param source track wbr'.split(' '),
 );
@@ -126,6 +127,56 @@ function checkHtml(file) {
   if (stack.length) fail(file, `unclosed tags: ${stack.join(', ')}`);
 }
 
+function checkStructuredData(file) {
+  const html = read(file);
+  const blocks = [
+    ...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi),
+  ];
+
+  if (!blocks.length) return fail(file, 'missing JSON-LD structured data');
+
+  blocks.forEach((block, index) => {
+    let data;
+    try {
+      data = JSON.parse(block[1]);
+    } catch (error) {
+      fail(file, `JSON-LD block ${index + 1} is not valid JSON: ${error.message}`);
+      return;
+    }
+    if (!String(data['@context'] || '').includes('schema.org')) {
+      fail(file, `JSON-LD block ${index + 1} is missing a schema.org @context`);
+    }
+    if (!data['@type']) fail(file, `JSON-LD block ${index + 1} is missing @type`);
+  });
+}
+
+function checkSitemap(file) {
+  const xml = read(file);
+  if (!xml.trimStart().startsWith('<?xml')) fail(file, 'missing XML declaration');
+
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  if (!locs.length) fail(file, 'no <loc> entries');
+
+  for (const loc of locs) {
+    let url;
+    try {
+      url = new URL(loc);
+    } catch {
+      fail(file, `invalid <loc>: ${loc}`);
+      continue;
+    }
+    if (url.protocol !== 'https:') fail(file, `<loc> is not https: ${loc}`);
+    const target = url.pathname.replace(/^\//, '') || 'index.html';
+    if (!fs.existsSync(path.join(ROOT, target))) fail(file, `<loc> has no file on disk: ${loc}`);
+  }
+}
+
+function checkRobots(file) {
+  const txt = read(file);
+  if (!/^Sitemap: https:\/\/\S+$/m.test(txt)) fail(file, 'missing an absolute Sitemap directive');
+  if (/^Disallow: \/$/m.test(txt)) fail(file, 'disallows the whole site');
+}
+
 function checkCss(file) {
   const css = read(file);
 
@@ -198,7 +249,10 @@ function checkData(file, collection, fields) {
 // --- run ---
 
 for (const page of PAGES) checkHtml(page);
+for (const page of CONTENT_PAGES) checkStructuredData(page);
 checkCss('styles.css');
+checkSitemap('sitemap.xml');
+checkRobots('robots.txt');
 
 const jsFiles = [
   ...fs
@@ -246,5 +300,5 @@ if (errors.length) {
 }
 
 console.log(
-  `✓ ${PAGES.length} pages, styles.css, ${jsFiles.length} scripts and 2 data files look good`,
+  `✓ ${PAGES.length} pages, styles.css, sitemap/robots, ${jsFiles.length} scripts and 2 data files look good`,
 );
