@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Honey Badger">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <path d="M20 15c6 8 6 26 0 34" fill="none" stroke="#ffb703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M44 15c-6 8-6 26 0 34" fill="none" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="5" fill="#e2e8f0"/>
+</svg>

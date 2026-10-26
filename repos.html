@@ -3,125 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Repositories | James HoneyBadger</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
-
-    :root {
-      --bg: #0f172a;
-      --panel: rgba(255, 255, 255, 0.04);
-      --accent: #ffb703;
-      --accent-2: #38bdf8;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --border: rgba(255, 255, 255, 0.08);
-      --glow: 0 10px 40px rgba(56, 189, 248, 0.25);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Space Grotesk', 'Segoe UI', Tahoma, sans-serif;
-      background: radial-gradient(circle at 8% 18%, rgba(56, 189, 248, 0.18), transparent 25%),
-                  radial-gradient(circle at 92% 12%, rgba(255, 183, 3, 0.16), transparent 30%),
-                  linear-gradient(135deg, #0b1224 0%, #111827 50%, #0f172a 100%);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-      padding: 32px 20px 60px;
-    }
-
-    .shell { max-width: 1200px; margin: 0 auto; }
-
-    header.hero {
-      padding: 28px;
-      border-radius: 18px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      box-shadow: var(--glow);
-      backdrop-filter: blur(12px);
-    }
-
-    .title { font-size: 2.4rem; font-weight: 700; margin-top: 6px; }
-    .subtitle { color: var(--muted); max-width: 760px; margin-top: 10px; }
-
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 16px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #0b1224;
-      background: var(--accent);
-      font-weight: 600;
-      box-shadow: var(--glow);
-      transition: transform 150ms ease, box-shadow 150ms ease;
-    }
-    .btn.secondary {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid var(--border);
-      box-shadow: none;
-    }
-    .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(255, 183, 3, 0.28); }
-    .btn.secondary:hover { box-shadow: var(--glow); }
-
-    .panel {
-      margin-top: 26px;
-      padding: 20px;
-      border-radius: 16px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-    }
-
-    .filters { display: grid; grid-template-columns: 1fr 180px 160px; gap: 12px; }
-    @media (max-width: 900px) {
-      .filters { grid-template-columns: 1fr; }
-    }
-
-    .field label { display: block; color: var(--muted); font-size: 0.9rem; margin-bottom: 6px; }
-    .field input, .field select {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--text);
-      font-size: 1rem;
-      outline: none;
-    }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 18px; }
-    .card {
-      position: relative;
-      padding: 16px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(15, 23, 42, 0.92);
-      transition: transform 150ms ease, border-color 150ms ease;
-    }
-    .card:hover { transform: translateY(-2px); border-color: rgba(255, 183, 3, 0.4); }
-
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .desc { color: var(--text); font-size: 0.97rem; margin-bottom: 10px; }
-    .meta { display: flex; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; }
-    .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); }
-    .badge { color: var(--muted); font-size: 0.85rem; border: 1px solid var(--border); padding: 6px 8px; border-radius: 10px; }
-
-    .status { color: var(--muted); margin-top: 12px; font-size: 0.95rem; }
-    .error { color: #fca5a5; }
-    footer { margin-top: 32px; text-align: center; color: var(--muted); }
-    footer a { color: var(--accent-2); text-decoration: none; }
-    footer a:hover { color: #7dd3fc; }
-  </style>
+  <title>All Repositories | James HoneyBadger</title>
+  <meta name="description" content="Search, filter and sort every public repository owned by @James-HoneyBadger. Live data from the GitHub REST API.">
+  <link rel="canonical" href="https://james-honeybadger.github.io/repos.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="James HoneyBadger">
+  <meta property="og:title" content="All Repositories | James HoneyBadger">
+  <meta property="og:description" content="Search, filter and sort every public repository owned by @James-HoneyBadger. Live data from the GitHub REST API.">
+  <meta property="og:url" content="https://james-honeybadger.github.io/repos.html">
+  <meta property="og:image" content="https://james-honeybadger.github.io/hb.jpg">
+  <meta property="og:image:alt" content="HoneyBadger graphic">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-repos">
   <div class="shell">
     <header class="hero">
-      <p class="tagline" style="color: var(--muted); letter-spacing: 0.04em;">OWNED REPOS ONLY · LIVE FROM GITHUB</p>
+      <p class="tagline">OWNED REPOS ONLY · LIVE FROM GITHUB</p>
       <h1 class="title">Repository directory</h1>
       <p class="subtitle">Search, filter, and sort repositories owned by @James-HoneyBadger. Forks and non-owned repos are excluded.</p>
       <div class="actions">
@@ -169,7 +71,9 @@
     const langSelect = document.getElementById('language');
     const sortSelect = document.getElementById('sort');
 
-    const state = { repos: [], filtered: [] };
+    const state = { repos: [] };
+    // Dates are pinned to UTC so every visitor sees the same day as GitHub.
+    const dateOptions = { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' };
 
     function escapeHtml(str) {
       return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
@@ -212,19 +116,18 @@
         list.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
       }
 
-      state.filtered = list;
-
       if (!list.length) {
         statusEl.textContent = 'No repositories match your filters yet.';
         grid.innerHTML = '';
         return;
       }
 
+      statusEl.classList.remove('error');
       statusEl.textContent = '';
       grid.innerHTML = list.map((repo) => {
         const desc = repo.description ? escapeHtml(repo.description) : 'No description provided yet.';
         const lang = repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : '';
-        const updated = new Date(repo.pushed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+        const updated = new Date(repo.pushed_at).toLocaleDateString(undefined, dateOptions);
 
         return `
           <article class="card">
@@ -233,7 +136,7 @@
               <span class="pill">🍴 ${repo.forks_count}</span>
               ${lang}
             </div>
-            <h3><a href="${repo.html_url}" style="color: var(--text); text-decoration: none;" target="_blank" rel="noreferrer">${escapeHtml(repo.name)}</a></h3>
+            <h3><a href="${repo.html_url}" target="_blank" rel="noreferrer">${escapeHtml(repo.name)}</a></h3>
             <p class="desc">${desc}</p>
             <div class="meta">
               <span>Last push · ${updated}</span>

@@ -1,0 +1,191 @@
+:root {
+  --panel: rgba(255, 255, 255, 0.04);
+  --accent: #ffb703;
+  --accent-2: #38bdf8;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.08);
+  --glow: 0 10px 40px rgba(56, 189, 248, 0.25);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Space Grotesk', 'Segoe UI', Tahoma, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 32px 20px 60px;
+}
+
+.page-home {
+  background: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.18), transparent 25%),
+              radial-gradient(circle at 90% 10%, rgba(255, 183, 3, 0.16), transparent 30%),
+              linear-gradient(135deg, #0b1224 0%, #111827 50%, #0f172a 100%);
+}
+
+.page-repos {
+  background: radial-gradient(circle at 8% 18%, rgba(56, 189, 248, 0.18), transparent 25%),
+              radial-gradient(circle at 92% 12%, rgba(255, 183, 3, 0.16), transparent 30%),
+              linear-gradient(135deg, #0b1224 0%, #111827 50%, #0f172a 100%);
+}
+
+.shell { max-width: 1200px; margin: 0 auto; }
+
+header.hero {
+  border-radius: 18px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: var(--glow);
+  backdrop-filter: blur(12px);
+}
+
+.page-home header.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; padding: 32px; }
+.page-repos header.hero { padding: 28px; }
+
+@media (max-width: 900px) {
+  .page-home header.hero { grid-template-columns: 1fr; }
+}
+
+.hero-media { display: grid; place-items: center; }
+
+.hero-media img {
+  width: min(320px, 100%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+
+.tagline { color: var(--muted); letter-spacing: 0.04em; }
+.page-home .tagline { font-size: 0.95rem; }
+
+.page-home .title { font-size: 2.8rem; margin: 10px 0 8px; font-weight: 700; }
+.page-repos .title { font-size: 2.4rem; font-weight: 700; margin-top: 6px; }
+
+.page-home .subtitle { color: var(--muted); font-size: 1.05rem; max-width: 720px; }
+.page-repos .subtitle { color: var(--muted); max-width: 760px; margin-top: 10px; }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0b1224;
+  background: var(--accent);
+  font-weight: 600;
+  box-shadow: var(--glow);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(255, 183, 3, 0.28); }
+.btn.secondary:hover { box-shadow: var(--glow); }
+
+.page-repos .btn { gap: 8px; padding: 11px 16px; }
+
+.panel {
+  border-radius: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.page-home .panel { margin-top: 36px; padding: 28px; }
+.page-repos .panel { margin-top: 26px; padding: 20px; }
+
+.panel-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.panel-header h2 { font-size: 1.4rem; }
+.panel-header p { color: var(--muted); font-size: 0.95rem; }
+
+.filters { display: grid; grid-template-columns: 1fr 180px 160px; gap: 12px; }
+
+@media (max-width: 900px) {
+  .filters { grid-template-columns: 1fr; }
+}
+
+.field label { display: block; color: var(--muted); font-size: 0.9rem; margin-bottom: 6px; }
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.page-home .grid { gap: 16px; margin-top: 20px; }
+.page-repos .grid { gap: 14px; margin-top: 18px; }
+
+.card {
+  position: relative;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+
+.page-home .card { padding: 18px; background: rgba(15, 23, 42, 0.9); }
+.page-repos .card { padding: 16px; background: rgba(15, 23, 42, 0.92); }
+
+.page-home .card:hover { transform: translateY(-3px); border-color: rgba(255, 183, 3, 0.4); }
+.page-repos .card:hover { transform: translateY(-2px); border-color: rgba(255, 183, 3, 0.4); }
+
+.page-home .card h3 { margin-top: 12px; font-size: 1.2rem; }
+.page-repos .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.page-repos .card h3 a { color: var(--text); text-decoration: none; }
+
+.card-actions { margin-top: 14px; display: flex; gap: 10px; }
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--text);
+  font-size: 0.9rem;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge { color: var(--muted); font-size: 0.85rem; border: 1px solid var(--border); padding: 6px 8px; border-radius: 10px; }
+
+/* The repos cards inherit their pill colour from .meta; the highlights cards set it explicitly. */
+.page-repos .pill { color: inherit; }
+
+.meta { display: flex; gap: 10px; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; }
+.page-home .meta { margin-top: 10px; }
+
+.desc { color: var(--text); }
+.page-home .desc { margin: 10px 0 12px; font-size: 0.98rem; }
+.page-repos .desc { font-size: 0.97rem; margin-bottom: 10px; }
+
+footer { text-align: center; color: var(--muted); }
+.page-home footer { margin-top: 40px; }
+.page-repos footer { margin-top: 32px; }
+footer a { color: var(--accent-2); text-decoration: none; }
+footer a:hover { color: #7dd3fc; }
+
+.status { color: var(--muted); margin-top: 12px; font-size: 0.95rem; }
+.error { color: #fca5a5; }
+
+:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+.field input:focus-visible,
+.field select:focus-visible { outline-offset: 1px; border-color: rgba(56, 189, 248, 0.6); }
