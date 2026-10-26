@@ -1,150 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pinned Projects | James HoneyBadger</title>
-    <meta name="description" content="Live highlights of the pinned repositories from @James-HoneyBadger: a retro programming environment, hobby operating systems, an esoteric language interpreter and a cellular-automata simulator.">
-    <link rel="canonical" href="https://james-honeybadger.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="James HoneyBadger">
-    <meta property="og:title" content="Pinned Projects | James HoneyBadger">
-    <meta property="og:description" content="Live highlights of the pinned repositories from @James-HoneyBadger: a retro programming environment, hobby operating systems, an esoteric language interpreter and a cellular-automata simulator.">
-    <meta property="og:url" content="https://james-honeybadger.github.io/">
-    <meta property="og:image" content="https://james-honeybadger.github.io/hb.jpg">
-    <meta property="og:image:alt" content="HoneyBadger graphic">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
-    <noscript><style>.status { display: none; }</style></noscript>
-</head>
-<body class="page-home">
+    <meta
+      name="description"
+      content="Live highlights of the pinned repositories from @James-HoneyBadger: a retro programming environment, hobby operating systems, an esoteric language interpreter and a cellular-automata simulator."
+    />
+    <link rel="canonical" href="https://james-honeybadger.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="James HoneyBadger" />
+    <meta property="og:title" content="Pinned Projects | James HoneyBadger" />
+    <meta
+      property="og:description"
+      content="Live highlights of the pinned repositories from @James-HoneyBadger: a retro programming environment, hobby operating systems, an esoteric language interpreter and a cellular-automata simulator."
+    />
+    <meta property="og:url" content="https://james-honeybadger.github.io/" />
+    <meta property="og:image" content="https://james-honeybadger.github.io/hb.jpg" />
+    <meta property="og:image:alt" content="HoneyBadger graphic" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/space-grotesk-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript
+      ><style>
+        .status {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body class="page-home">
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="shell">
+      <main id="main">
         <header class="hero">
-            <div>
-                <p class="tagline">JAMES HONEYBADGER · PROJECTS</p>
-                <h1 class="title">My GitHub repositories</h1>
-                <p class="subtitle">A live snapshot of repositories I own on GitHub, ranked by stars (highest first). No forks, no other owners.</p>
+          <div>
+            <p class="tagline">JAMES HONEYBADGER · PROJECTS</p>
+            <h1 class="title">My GitHub repositories</h1>
+            <p class="subtitle">
+              A live snapshot of repositories I own on GitHub, ranked by stars (highest first). No
+              forks, no other owners.
+            </p>
 
-                <div class="hero-actions">
-                    <a class="btn" href="repos.html">See all repositories</a>
-                    <a class="btn secondary" href="https://github.com/James-HoneyBadger" target="_blank" rel="noreferrer">Open GitHub profile</a>
-                </div>
+            <div class="hero-actions">
+              <a class="btn" href="repos.html">See all repositories</a>
+              <a
+                class="btn secondary"
+                href="https://github.com/James-HoneyBadger"
+                target="_blank"
+                rel="noreferrer"
+                >Open GitHub profile</a
+              >
             </div>
-            <div class="hero-media">
-                <img src="hb.jpg" alt="HoneyBadger graphic" loading="eager" decoding="async">
-            </div>
+          </div>
+          <div class="hero-media">
+            <picture>
+              <source type="image/avif" srcset="hb.avif" />
+              <source type="image/webp" srcset="hb.webp" />
+              <img
+                src="hb.jpg"
+                alt="HoneyBadger graphic"
+                width="916"
+                height="857"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
         </header>
 
         <section class="panel" id="starred">
-            <div class="panel-header">
-                <div>
-                    <h2>Pinned highlights</h2>
-                    <p>Only pinned repositories from my GitHub profile (owned by me), ordered by stars (highest first).</p>
-                </div>
-                <a class="btn secondary" href="repos.html">Browse everything</a>
+          <div class="panel-header">
+            <div>
+              <h2>Pinned highlights</h2>
+              <p>
+                Only pinned repositories from my GitHub profile (owned by me), ordered by stars
+                (highest first).
+              </p>
             </div>
+            <a class="btn secondary" href="repos.html">Browse everything</a>
+          </div>
 
-            <div class="status" id="starred-status">Loading pinned repositories…</div>
-            <div class="grid" id="starred-grid" aria-live="polite"></div>
-            <noscript>
-                <p class="notice">This page builds its list in your browser. Enable JavaScript, or see the pinned repositories on <a href="https://github.com/James-HoneyBadger">GitHub</a>.</p>
-            </noscript>
+          <div class="status" id="starred-status">Loading pinned repositories…</div>
+          <div class="grid" id="starred-grid" aria-live="polite"></div>
+          <noscript>
+            <p class="notice">
+              This page builds its list in your browser. Enable JavaScript, or see the pinned
+              repositories on <a href="https://github.com/James-HoneyBadger">GitHub</a>.
+            </p>
+          </noscript>
         </section>
+      </main>
 
-        <footer>
-            <p>Built with GitHub Pages · Data from the public GitHub API.</p>
-            <p><a href="https://github.com/James-HoneyBadger">@James-HoneyBadger</a></p>
-        </footer>
+      <footer>
+        <p>Built with GitHub Pages · Data from the public GitHub API.</p>
+        <p><a href="https://github.com/James-HoneyBadger">@James-HoneyBadger</a></p>
+      </footer>
     </div>
 
-    <script>
-        const username = 'James-HoneyBadger';
-        const starredGrid = document.getElementById('starred-grid');
-        const starredStatus = document.getElementById('starred-status');
-        // Dates are pinned to UTC so every visitor sees the same day as GitHub.
-        const dateOptions = { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' };
-
-        function escapeHtml(str) {
-            return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
-        }
-
-        function safeUrl(value) {
-            try {
-                const url = new URL(value);
-                return url.protocol === 'https:' ? escapeHtml(url.href) : '#';
-            } catch {
-                return '#';
-            }
-        }
-
-        function renderPinned(repos) {
-            const pinned = [...repos]
-                .filter((r) => (r.owner || '').toLowerCase() === username.toLowerCase())
-                .sort((a, b) => (b.stars || 0) - (a.stars || 0));
-
-            if (!pinned.length) {
-                starredStatus.classList.add('error');
-                starredStatus.textContent = `No pinned repositories found for @${username}. Run the "Update pinned repos" workflow once.`;
-                starredGrid.innerHTML = '';
-                return;
-            }
-
-            starredStatus.classList.remove('error');
-            starredStatus.textContent = '';
-            starredGrid.innerHTML = pinned.map((repo) => {
-                const desc = repo.description ? escapeHtml(repo.description) : 'No description provided yet.';
-                const lang = repo.language ? `<span class="badge">${escapeHtml(repo.language)}</span>` : '';
-                const updated = repo.pushedAt ? new Date(repo.pushedAt).toLocaleDateString(undefined, dateOptions) : '—';
-
-                return `
-                    <article class="card">
-                        <div class="meta">
-                            <span class="pill">⭐ ${repo.stars ?? 0}</span>
-                            <span class="pill">🍴 ${repo.forks ?? 0}</span>
-                            ${lang}
-                        </div>
-                        <h3>${escapeHtml(repo.name)}</h3>
-                        <p class="desc">${desc}</p>
-                        <div class="meta">
-                            <span>Owner · ${escapeHtml(repo.owner)}</span>
-                            <span>Last push · ${updated}</span>
-                        </div>
-                        <div class="card-actions">
-                            <a class="btn secondary" href="${safeUrl(repo.url)}" target="_blank" rel="noreferrer">Open on GitHub</a>
-                        </div>
-                    </article>`;
-            }).join('');
-        }
-
-        async function fetchJson(url) {
-            const response = await fetch(url, { headers: { 'Accept': 'application/json' } });
-            if (!response.ok) {
-                throw new Error(`API error: ${response.status}`);
-            }
-            return response.json();
-        }
-
-        async function loadHighlights() {
-            try {
-                // Bucket the cache-buster to the hour: repeat views reuse the cached
-                // JSON instead of re-downloading it, and the scheduled workflow only
-                // changes the file when the pinned data itself moves.
-                const cacheBucket = Math.floor(Date.now() / 3_600_000);
-                const data = await fetchJson(`data/pinned.json?v=${cacheBucket}`);
-                const pinned = data && Array.isArray(data.pinned) ? data.pinned : [];
-                renderPinned(pinned);
-            } catch (err) {
-                starredStatus.classList.add('error');
-                starredStatus.textContent = `Unable to load pinned repositories for @${username}.`;
-                console.error(err);
-            }
-        }
-
-        loadHighlights();
-    </script>
-</body>
+    <script type="module" src="assets/index.js"></script>
+  </body>
 </html>

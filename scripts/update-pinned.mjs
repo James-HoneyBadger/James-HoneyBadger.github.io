@@ -24,8 +24,7 @@ const query = `
             pushedAt
             owner { login }
             primaryLanguage { name }
-            isPrivate
-            isFork
+            isArchived
           }
         }
       }
@@ -75,8 +74,7 @@ const pinned = nodes
     stars: r.stargazerCount || 0,
     forks: r.forkCount || 0,
     pushedAt: r.pushedAt || null,
-    isPrivate: Boolean(r.isPrivate),
-    isFork: Boolean(r.isFork),
+    archived: Boolean(r.isArchived),
   }))
   // enforce: ONLY repos owned by the account
   .filter((r) => r.owner.toLowerCase() === OWNER.toLowerCase())
@@ -108,7 +106,7 @@ await fs.mkdir(path.dirname(OUT_PATH), { recursive: true });
 await fs.writeFile(
   OUT_PATH,
   JSON.stringify({ user: OWNER, generatedAt: new Date().toISOString(), pinned }, null, 2) + '\n',
-  'utf8'
+  'utf8',
 );
 
 console.log(`Wrote ${OUT_PATH} with ${pinned.length} pinned repos for @${OWNER}`);

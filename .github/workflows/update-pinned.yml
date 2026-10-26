@@ -1,4 +1,4 @@
-name: Update pinned repos
+name: Refresh site data
 
 on:
   schedule:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generate pinned JSON
+      - name: Generate site data
         env:
           # Pinned items need an authenticated GraphQL call. The repo-scoped
           # GITHUB_TOKEN suffices for a public profile (verified 2026-10-26),
@@ -31,14 +31,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PINNED_REPOS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_PINNED_USER: James-HoneyBadger
           GH_PINNED_OUT: data/pinned.json
+          GH_REPOS_OUT: data/repos.json
         run: |
           if [ -z "${GITHUB_TOKEN}" ]; then
             echo "Missing required secret: PINNED_REPOS_TOKEN"
             exit 1
           fi
           node scripts/update-pinned.mjs
+          node scripts/update-repos.mjs
 
-      - name: Commit pinned JSON
+      - name: Commit site data
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes"
@@ -46,6 +48,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pinned.json
-          git commit -m "chore: update pinned repos"
+          git add data/pinned.json data/repos.json
+          git commit -m "chore: refresh site data"
           git push
