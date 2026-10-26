@@ -17,16 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '20'
 
       - name: Generate pinned JSON
         env:
-          # Required: add this repo secret (classic PAT w/ read:user is simplest)
-          GITHUB_TOKEN: ${{ secrets.PINNED_REPOS_TOKEN }}
+          # Pinned items need an authenticated GraphQL call. The repo-scoped
+          # GITHUB_TOKEN suffices for a public profile (verified 2026-10-26),
+          # so PINNED_REPOS_TOKEN is only needed if that ever changes.
+          GITHUB_TOKEN: ${{ secrets.PINNED_REPOS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_PINNED_USER: James-HoneyBadger
           GH_PINNED_OUT: data/pinned.json
         run: |

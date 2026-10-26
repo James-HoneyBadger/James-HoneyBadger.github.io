@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <noscript><style>.status { display: none; }</style></noscript>
 </head>
 <body class="page-home">
     <div class="shell">
@@ -49,6 +50,9 @@
 
             <div class="status" id="starred-status">Loading pinned repositories…</div>
             <div class="grid" id="starred-grid" aria-live="polite"></div>
+            <noscript>
+                <p class="notice">This page builds its list in your browser. Enable JavaScript, or see the pinned repositories on <a href="https://github.com/James-HoneyBadger">GitHub</a>.</p>
+            </noscript>
         </section>
 
         <footer>
@@ -66,6 +70,15 @@
 
         function escapeHtml(str) {
             return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
+        }
+
+        function safeUrl(value) {
+            try {
+                const url = new URL(value);
+                return url.protocol === 'https:' ? escapeHtml(url.href) : '#';
+            } catch {
+                return '#';
+            }
         }
 
         function renderPinned(repos) {
@@ -101,7 +114,7 @@
                             <span>Last push · ${updated}</span>
                         </div>
                         <div class="card-actions">
-                            <a class="btn secondary" href="${repo.url}" target="_blank" rel="noreferrer">Open on GitHub</a>
+                            <a class="btn secondary" href="${safeUrl(repo.url)}" target="_blank" rel="noreferrer">Open on GitHub</a>
                         </div>
                     </article>`;
             }).join('');

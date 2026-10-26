@@ -185,6 +185,9 @@ footer a:hover { color: #7dd3fc; }
 .status { color: var(--muted); margin-top: 12px; font-size: 0.95rem; }
 .error { color: #fca5a5; }
 
+.notice { margin-top: 12px; color: var(--muted); font-size: 0.95rem; }
+.notice a { color: var(--accent-2); }
+
 :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
 
 .field input:focus-visible,

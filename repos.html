@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <noscript><style>.status { display: none; }</style></noscript>
 </head>
 <body class="page-repos">
   <div class="shell">
@@ -56,6 +57,9 @@
 
       <div class="status" id="status">Loading repositories…</div>
       <div class="grid" id="repo-grid" aria-live="polite"></div>
+      <noscript>
+        <p class="notice">This page builds its list in your browser. Enable JavaScript, or see the repositories on <a href="https://github.com/James-HoneyBadger?tab=repositories">GitHub</a>.</p>
+      </noscript>
     </section>
 
     <footer>
@@ -79,14 +83,26 @@
       return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
     }
 
+    function safeUrl(value) {
+      try {
+        const url = new URL(value);
+        return url.protocol === 'https:' ? escapeHtml(url.href) : '#';
+      } catch {
+        return '#';
+      }
+    }
+
     function setLanguages(repos) {
       const languages = Array.from(new Set(repos.map((r) => r.language).filter(Boolean))).sort();
+      const previous = langSelect.value;
+      langSelect.length = 1; // keep the "Any language" placeholder, drop the rest
       languages.forEach((lang) => {
         const opt = document.createElement('option');
         opt.value = lang;
         opt.textContent = lang;
         langSelect.appendChild(opt);
       });
+      langSelect.value = languages.includes(previous) ? previous : '';
     }
 
     function render() {
@@ -136,28 +152,49 @@
               <span class="pill">🍴 ${repo.forks_count}</span>
               ${lang}
             </div>
-            <h3><a href="${repo.html_url}" target="_blank" rel="noreferrer">${escapeHtml(repo.name)}</a></h3>
+            <h3><a href="${safeUrl(repo.html_url)}" target="_blank" rel="noreferrer">${escapeHtml(repo.name)}</a></h3>
             <p class="desc">${desc}</p>
             <div class="meta">
               <span>Last push · ${updated}</span>
-              <span>${repo.private ? 'Private' : 'Public'}</span>
             </div>
           </article>`;
       }).join('');
     }
 
-    async function loadRepos() {
-      try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`, {
-          headers: { 'Accept': 'application/vnd.github+json' }
-        });
+    async function fetchAllRepos() {
+      const perPage = 100;
+      // 5 pages = 500 repos, well beyond this account; the loop stops early as
+      // soon as a short page comes back.
+      const maxPages = 5;
+      const all = [];
+
+      for (let page = 1; page <= maxPages; page += 1) {
+        const response = await fetch(
+          `https://api.github.com/users/${username}/repos?per_page=${perPage}&page=${page}&sort=updated`,
+          { headers: { 'Accept': 'application/vnd.github+json' } }
+        );
         if (!response.ok) {
           throw new Error(`GitHub API error: ${response.status}`);
         }
-        const repos = await response.json();
-        const owned = Array.isArray(repos)
-          ? repos.filter((r) => (r.owner?.login || '').toLowerCase() === username.toLowerCase()).filter((r) => !r.fork)
-          : [];
+        const batch = await response.json();
+        if (!Array.isArray(batch)) {
+          throw new Error('Unexpected GitHub API response');
+        }
+        all.push(...batch);
+        if (batch.length < perPage) {
+          break;
+        }
+      }
+
+      return all;
+    }
+
+    async function loadRepos() {
+      try {
+        const repos = await fetchAllRepos();
+        const owned = repos
+          .filter((r) => (r.owner?.login || '').toLowerCase() === username.toLowerCase())
+          .filter((r) => !r.fork);
         state.repos = owned;
         setLanguages(owned);
         render();
