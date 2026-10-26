@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-26T07:02:18.426Z",
+  "generatedAt": "2026-10-26T12:45:31.302Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -11,8 +11,7 @@
       "stars": 24,
       "forks": 1,
       "pushedAt": "2026-10-23T13:59:31Z",
-      "isPrivate": false,
-      "isFork": false
+      "archived": false
     },
     {
       "owner": "James-HoneyBadger",
@@ -23,8 +22,7 @@
       "stars": 7,
       "forks": 1,
       "pushedAt": "2026-10-23T02:09:07Z",
-      "isPrivate": false,
-      "isFork": false
+      "archived": false
     },
     {
       "owner": "James-HoneyBadger",
@@ -35,8 +33,7 @@
       "stars": 6,
       "forks": 0,
       "pushedAt": "2026-10-23T16:03:48Z",
-      "isPrivate": false,
-      "isFork": false
+      "archived": false
     },
     {
       "owner": "James-HoneyBadger",
@@ -47,8 +44,7 @@
       "stars": 4,
       "forks": 0,
       "pushedAt": "2026-10-25T23:13:40Z",
-      "isPrivate": false,
-      "isFork": false
+      "archived": false
     },
     {
       "owner": "James-HoneyBadger",
@@ -58,9 +54,8 @@
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-10-26T03:48:36Z",
-      "isPrivate": false,
-      "isFork": false
+      "pushedAt": "2026-10-26T12:35:57Z",
+      "archived": false
     },
     {
       "owner": "James-HoneyBadger",
@@ -71,8 +66,7 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-10-25T00:05:58Z",
-      "isPrivate": false,
-      "isFork": false
+      "archived": false
     }
   ]
 }
