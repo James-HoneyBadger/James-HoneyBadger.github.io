@@ -81,6 +81,13 @@ const pinned = nodes
   // enforce: pinned, owned, sorted by stars desc
   .sort((a, b) => b.stars - a.stars);
 
+// An empty result almost always means the token lost access or the profile
+// changed shape; writing it would blank the highlights page.
+if (pinned.length === 0) {
+  console.error(`Refusing to write ${OUT_PATH}: no pinned repositories returned for @${OWNER}.`);
+  process.exit(1);
+}
+
 // A run that finds nothing new must not rewrite the file: refreshing
 // `generatedAt` alone would create an empty commit and a Pages deploy.
 async function readPreviousPinned(file) {

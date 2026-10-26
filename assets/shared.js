@@ -49,6 +49,16 @@ export function describeError(error) {
     return `The data source responded with HTTP ${error.status}.`;
   }
 
+  // fetch() rejects with a TypeError when the network itself fails.
+  if (error instanceof TypeError) {
+    return 'The data source could not be reached.';
+  }
+
+  // Errors raised by our own loaders already carry a useful message.
+  if (error instanceof Error && error.message) {
+    return error.message;
+  }
+
   return 'The data source could not be reached.';
 }
 

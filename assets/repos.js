@@ -1,6 +1,7 @@
 import {
   archivedBadge,
   clearCache,
+  HttpError,
   debounce,
   describeError,
   escapeHtml,
@@ -82,19 +83,26 @@ function readUrlState() {
   };
 }
 
-function syncUrl({ term, language, sort }) {
-  const params = new URLSearchParams();
-  if (term) params.set('q', term);
-  if (language) params.set('lang', language);
-  if (sort && sort !== 'updated') params.set('sort', sort);
+function syncUrl({ raw, language, sort }) {
+  // Keep unrelated query parameters (campaign links etc.) and the user's casing.
+  const params = new URLSearchParams(location.search);
+  const set = (key, value, fallback) => {
+    if (value && value !== fallback) params.set(key, value);
+    else params.delete(key);
+  };
+  set('q', raw, '');
+  set('lang', language, '');
+  set('sort', sort, 'updated');
 
   const query = params.toString();
   history.replaceState(null, '', query ? `${location.pathname}?${query}` : location.pathname);
 }
 
 function currentFilters() {
+  const raw = els.search.value.trim();
   return {
-    term: els.search.value.trim().toLowerCase(),
+    term: raw.toLowerCase(), // matching is case-insensitive, the URL keeps the raw text
+    raw,
     language: els.language.value,
     sort: els.sort.value,
   };
@@ -141,20 +149,31 @@ function renderCard(repo) {
 
 function render() {
   const filters = currentFilters();
+  const total = state.repos.length;
   const list = state.repos
     .filter((repo) => matches(repo, filters.term))
     .filter((repo) => !filters.language || repo.language === filters.language)
     .sort(SORTERS[filters.sort] || SORTERS.updated);
 
-  const total = state.repos.length;
   els.grid.setAttribute('aria-busy', 'false');
-  els.results.textContent = total
-    ? `Showing ${list.length} of ${total} ${total === 1 ? 'repository' : 'repositories'}`
-    : '';
+
+  // The loaders reject empty snapshots, so this is a deliberate, visible state
+  // rather than a silently blank panel.
+  if (total === 0) {
+    els.grid.innerHTML = '';
+    els.results.textContent = 'No repository data is available.';
+    els.empty.hidden = true;
+    syncUrl(filters);
+    return;
+  }
+
+  els.results.textContent = `Showing ${list.length} of ${total} ${
+    total === 1 ? 'repository' : 'repositories'
+  }`;
 
   if (!list.length) {
     els.grid.innerHTML = '';
-    els.empty.hidden = total === 0;
+    els.empty.hidden = false;
     syncUrl(filters);
     return;
   }
@@ -199,7 +218,8 @@ function showError(error) {
   els.grid.setAttribute('aria-busy', 'false');
 
   if (state.repos.length) {
-    els.results.textContent = `Showing cached data · ${describeError(error)}`;
+    const label = state.source === 'live' ? 'Showing the live data' : 'Showing cached data';
+    els.results.textContent = `${label} · ${describeError(error)}`;
     return;
   }
 
@@ -214,8 +234,8 @@ async function loadSnapshot({ force = false } = {}) {
   const bucket = force ? Date.now() : Math.floor(Date.now() / 3_600_000);
   const data = await fetchJson(`${SNAPSHOT_URL}?v=${bucket}`);
 
-  if (!data || !Array.isArray(data.repos)) {
-    throw new Error('The snapshot has an unexpected shape.');
+  if (!data || !Array.isArray(data.repos) || data.repos.length === 0) {
+    throw new Error('The repository snapshot is malformed or empty.');
   }
 
   return {
@@ -237,11 +257,12 @@ async function loadLive() {
     if (batch.length < 100) break;
   }
 
-  return {
-    repos: ownedOnly(raw),
-    generatedAt: new Date().toISOString(),
-    source: 'live',
-  };
+  const repos = ownedOnly(raw);
+  if (repos.length === 0) {
+    throw new Error('The GitHub API returned no repositories for this account.');
+  }
+
+  return { repos, generatedAt: new Date().toISOString(), source: 'live' };
 }
 
 async function refresh({ force = false } = {}) {
@@ -257,7 +278,12 @@ async function refresh({ force = false } = {}) {
       paint(await loadLive());
     } catch (liveError) {
       ok = false;
-      showError(liveError.status ? liveError : snapshotError);
+      console.error('Snapshot load failed:', snapshotError);
+      // A missing snapshot file is the expected trigger for this fallback, so
+      // report the live error. A malformed or empty snapshot is a real data
+      // problem and is the more useful thing to show.
+      const snapshotMissing = snapshotError instanceof HttpError && snapshotError.status === 404;
+      showError(snapshotMissing ? liveError : snapshotError);
     }
   }
 
@@ -305,9 +331,14 @@ els.clear.addEventListener('click', () => {
   els.search.focus();
 });
 
-els.refresh.addEventListener('click', () => {
+els.refresh.addEventListener('click', async () => {
+  els.refresh.disabled = true;
   clearCache(CACHE_KEY);
-  refresh({ force: true });
+  try {
+    await refresh({ force: true });
+  } finally {
+    els.refresh.disabled = false;
+  }
 });
 
 els.status.addEventListener('click', (event) => {

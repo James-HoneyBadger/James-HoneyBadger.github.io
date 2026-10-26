@@ -80,9 +80,15 @@ const repos = raw
     topics: Array.isArray(r.topics) ? r.topics : [],
     license: r.license?.spdx_id || '',
     homepage: r.homepage || '',
-    openIssues: r.open_issues_count || 0,
   }))
   .sort((a, b) => new Date(b.pushedAt || 0) - new Date(a.pushedAt || 0));
+
+// An empty result almost always means the API or the account changed shape,
+// not that the account owns no repositories. Writing it would blank the site.
+if (repos.length === 0) {
+  console.error(`Refusing to write ${OUT_PATH}: no repositories returned for @${OWNER}.`);
+  process.exit(1);
+}
 
 // Same rule as the pinned generator: a run that finds nothing new must not
 // rewrite the file, or every scheduled run would create an empty commit.

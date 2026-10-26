@@ -463,6 +463,12 @@ picture {
   font-size: 0.88rem;
 }
 
+.btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+  transform: none;
+}
+
 .empty {
   display: flex;
   align-items: center;

@@ -34,6 +34,10 @@ scripts/                 data generators and the validator
 regenerates both JSON files and commits them only when something changed — a quiet run produces no
 commit and no Pages rebuild, because `generatedAt` is not refreshed on its own.
 
+Both generators refuse to write an empty list: an empty result almost always means the API or the
+account changed shape, and shipping `[]` would blank the site. `npm run check` enforces the same
+floor on the committed files.
+
 The GitHub GraphQL API needs an authenticated caller. The workflow uses the `PINNED_REPOS_TOKEN`
 secret when present and otherwise falls back to the repo-scoped `GITHUB_TOKEN`, which does read
 `pinnedItems` for a public profile (verified against this repo), so a PAT is optional.
