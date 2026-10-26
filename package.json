@@ -1,0 +1,16 @@
+{
+  "name": "james-honeybadger-pages",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static GitHub Pages site: pinned highlights and a repository directory.",
+  "scripts": {
+    "data": "node scripts/update-pinned.mjs && node scripts/update-repos.mjs",
+    "check": "node scripts/validate.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
