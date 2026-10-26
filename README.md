@@ -64,7 +64,10 @@ python3 -m http.server 8000
 
 Tooling (`npm ci` once):
 
-- `npm run check` — markup, styles, data shape, asset references and JS syntax
+- `npm run lint` — ESLint over `assets/` and `scripts/` (recommended rules only, so it never
+  fights Prettier)
+- `npm run check` — markup, styles, data shape, asset references, JS syntax, JSON-LD, sitemap,
+  robots, and a 140 KB budget on the shipped HTML/CSS/JS
 - `npm run format` / `npm run format:check` — Prettier
 - `npm run data` — regenerate both JSON files
 

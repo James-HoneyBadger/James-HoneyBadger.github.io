@@ -159,8 +159,15 @@ export function statPills({ stars, forks }) {
   return `<span class="pill"><span class="sr-only">Stars: </span>⭐ ${stars ?? 0}</span><span class="pill"><span class="sr-only">Forks: </span>🍴 ${forks ?? 0}</span>`;
 }
 
+export function languageDot(language) {
+  if (!language) return '';
+  return `<span class="lang-dot" data-lang="${escapeHtml(language.toLowerCase())}" aria-hidden="true"></span>`;
+}
+
 export function languageBadge(language) {
-  return language ? `<span class="badge">${escapeHtml(language)}</span>` : '';
+  return language
+    ? `<span class="badge">${languageDot(language)}${escapeHtml(language)}</span>`
+    : '';
 }
 
 export function archivedBadge(archived) {
