@@ -1,19 +1,55 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-27T18:28:20.789Z",
+  "generatedAt": "2026-10-28T00:49:07.883Z",
   "repos": [
     {
       "name": "GimletEye",
       "url": "https://github.com/James-HoneyBadger/GimletEye",
-      "description": "",
-      "language": "Rust",
+      "description": "One workbench for system administration, cryptography, and metadata privacy.",
+      "language": "TypeScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-10-27T18:13:39Z",
+      "pushedAt": "2026-10-28T00:48:48Z",
       "createdAt": "2026-10-23T16:20:09Z",
       "archived": false,
       "topics": [],
       "license": "MIT",
+      "homepage": ""
+    },
+    {
+      "name": "Loresmith",
+      "url": "https://github.com/James-HoneyBadger/Loresmith",
+      "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with a CLI player, TUI editor, and GPU-accelerated GUI editor.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-10-28T00:06:13Z",
+      "createdAt": "2025-11-20T13:24:07Z",
+      "archived": false,
+      "topics": [
+        "egui",
+        "game-engine",
+        "interactive-fiction",
+        "ratatui",
+        "rust",
+        "text-adventure",
+        "tui"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/James-HoneyBadger/SagaCraft/releases/latest"
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-10-27T18:28:22Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
       "homepage": ""
     },
     {
@@ -75,20 +111,6 @@
         "virtual-machine"
       ],
       "license": "NOASSERTION",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-10-27T12:45:28Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
       "homepage": ""
     },
     {

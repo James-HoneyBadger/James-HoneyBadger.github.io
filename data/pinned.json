@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-27T18:28:20.276Z",
+  "generatedAt": "2026-10-28T00:49:07.320Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -50,11 +50,11 @@
       "owner": "James-HoneyBadger",
       "name": "GimletEye",
       "url": "https://github.com/James-HoneyBadger/GimletEye",
-      "description": "",
-      "language": "Rust",
+      "description": "One workbench for system administration, cryptography, and metadata privacy.",
+      "language": "TypeScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-10-27T18:13:39Z",
+      "pushedAt": "2026-10-28T00:48:48Z",
       "archived": false
     },
     {
