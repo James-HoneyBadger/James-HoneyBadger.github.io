@@ -1,7 +1,46 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-30T12:34:05.351Z",
+  "generatedAt": "2026-10-30T18:26:04.023Z",
   "repos": [
+    {
+      "name": "ratel-ledger",
+      "url": "https://github.com/James-HoneyBadger/ratel-ledger",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-10-30T18:12:53Z",
+      "createdAt": "2026-03-07T21:10:50Z",
+      "archived": false,
+      "topics": [
+        "budgeting",
+        "desktop-app",
+        "electron",
+        "golang",
+        "money-management",
+        "multi-currency",
+        "personal-finance",
+        "self-hosted",
+        "sqlite",
+        "vue"
+      ],
+      "license": "MIT",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-10-30T12:34:06Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
+      "homepage": ""
+    },
     {
       "name": "GimletEye",
       "url": "https://github.com/James-HoneyBadger/GimletEye",
@@ -14,20 +53,6 @@
       "archived": false,
       "topics": [],
       "license": "MIT",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-10-30T06:37:13Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
       "homepage": ""
     },
     {
@@ -295,31 +320,6 @@
         "rust",
         "simulation",
         "wireworld"
-      ],
-      "license": "MIT",
-      "homepage": ""
-    },
-    {
-      "name": "ratel-ledger",
-      "url": "https://github.com/James-HoneyBadger/ratel-ledger",
-      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-10-24T14:50:53Z",
-      "createdAt": "2026-03-07T21:10:50Z",
-      "archived": false,
-      "topics": [
-        "budgeting",
-        "desktop-app",
-        "electron",
-        "golang",
-        "money-management",
-        "multi-currency",
-        "personal-finance",
-        "self-hosted",
-        "sqlite",
-        "vue"
       ],
       "license": "MIT",
       "homepage": ""
