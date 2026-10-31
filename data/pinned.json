@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-10-30T12:34:04.594Z",
+  "generatedAt": "2026-10-31T18:25:22.646Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "An old-school programming environment: eleven interpreters from 1964-1980, a full IDE, a debugger in every language and turtle graphics -- plus two complete machines, the HB-1 home computer of 1982 with its own disk OS, and a live CHIP-8 with an assembler and register inspector.",
+      "description": "An old-school programming environment: eleven languages, a full IDE, and two complete computers inside it.  Timey wimey wibbly wobbly, time & multiuniverse travel computing.",
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-10-29T19:09:14Z",
+      "pushedAt": "2026-10-31T18:20:00Z",
       "archived": false
     },
     {
