@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-01T06:30:17.095Z",
+  "generatedAt": "2026-11-01T18:24:55.098Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -26,17 +26,6 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "GulfOfMexico",
-      "url": "https://github.com/James-HoneyBadger/GulfOfMexico",
-      "description": "Esoteric programming language interpreter — -1-based indexing, three-valued booleans, tiered & tilde equality, temporal lifetimes, compound assignment, emoji identifiers, negative hoisting, and a 5-theme GUI IDE. 170 tests, 26 demos. Based on Lu Wilson's (TodePond) DreamBerd spec.",
-      "language": "Python",
-      "stars": 6,
-      "forks": 0,
-      "pushedAt": "2026-10-27T14:29:16Z",
-      "archived": false
-    },
-    {
-      "owner": "James-HoneyBadger",
       "name": "Mellivora_OS",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
       "description": "Mellivora OS is a from-scratch hobby OS that boots on real x86 hardware or in QEMU. It includes a custom HBFS v3 filesystem with permissions and xattr, ring 3 user-mode execution, a DOS-inspired interactive shell with POSIX features,",
@@ -48,17 +37,6 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "GimletEye",
-      "url": "https://github.com/James-HoneyBadger/GimletEye",
-      "description": "One workbench for system administration, cryptography, and metadata privacy.",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-01T01:05:40Z",
-      "archived": false
-    },
-    {
-      "owner": "James-HoneyBadger",
       "name": "TesseraGrid",
       "url": "https://github.com/James-HoneyBadger/TesseraGrid",
       "description": "Tessera Grid — a fast Rust/egui cellular-automata simulator with 10 rule sets, 8 themes, headless CLI and PNG/GIF/RLE export",
@@ -66,6 +44,28 @@
       "stars": 1,
       "forks": 0,
       "pushedAt": "2026-11-01T03:59:42Z",
+      "archived": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "HB_Computers",
+      "url": "https://github.com/James-HoneyBadger/HB_Computers",
+      "description": "",
+      "language": "C++",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-01T18:22:43Z",
+      "archived": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "CHIP-8",
+      "url": "https://github.com/James-HoneyBadger/CHIP-8",
+      "description": "",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-01T18:05:00Z",
       "archived": false
     }
   ]

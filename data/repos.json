@@ -1,7 +1,35 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-01T12:26:25.689Z",
+  "generatedAt": "2026-11-01T18:24:55.612Z",
   "repos": [
+    {
+      "name": "HB_Computers",
+      "url": "https://github.com/James-HoneyBadger/HB_Computers",
+      "description": "",
+      "language": "C++",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-01T18:22:43Z",
+      "createdAt": "2026-11-01T12:49:32Z",
+      "archived": false,
+      "topics": [],
+      "license": "NOASSERTION",
+      "homepage": ""
+    },
+    {
+      "name": "CHIP-8",
+      "url": "https://github.com/James-HoneyBadger/CHIP-8",
+      "description": "",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-01T18:05:00Z",
+      "createdAt": "2026-11-01T13:02:10Z",
+      "archived": false,
+      "topics": [],
+      "license": "MIT",
+      "homepage": ""
+    },
     {
       "name": "James-HoneyBadger.github.io",
       "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
@@ -9,7 +37,7 @@
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-01T06:30:19Z",
+      "pushedAt": "2026-11-01T12:26:27Z",
       "createdAt": "2025-12-12T14:54:30Z",
       "archived": false,
       "topics": [],
