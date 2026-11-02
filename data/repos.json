@@ -1,19 +1,19 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-02T12:29:25.500Z",
+  "generatedAt": "2026-11-02T18:26:50.181Z",
   "repos": [
     {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "name": "CHIP-8",
+      "url": "https://github.com/James-HoneyBadger/CHIP-8",
       "description": "",
-      "language": "JavaScript",
+      "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-02T06:40:41Z",
-      "createdAt": "2025-12-12T14:54:30Z",
+      "pushedAt": "2026-11-02T14:31:52Z",
+      "createdAt": "2026-11-01T13:02:10Z",
       "archived": false,
       "topics": [],
-      "license": "",
+      "license": "MIT",
       "homepage": ""
     },
     {
@@ -23,11 +23,25 @@
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-02T03:54:42Z",
+      "pushedAt": "2026-11-02T14:12:13Z",
       "createdAt": "2026-11-01T12:49:32Z",
       "archived": false,
       "topics": [],
       "license": "NOASSERTION",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-02T12:29:26Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
       "homepage": ""
     },
     {
@@ -62,20 +76,6 @@
         "virtual-machine"
       ],
       "license": "NOASSERTION",
-      "homepage": ""
-    },
-    {
-      "name": "CHIP-8",
-      "url": "https://github.com/James-HoneyBadger/CHIP-8",
-      "description": "",
-      "language": "Python",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-01T18:05:00Z",
-      "createdAt": "2026-11-01T13:02:10Z",
-      "archived": false,
-      "topics": [],
-      "license": "MIT",
       "homepage": ""
     },
     {
