@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-02T00:43:37.286Z",
+  "generatedAt": "2026-11-02T06:40:39.400Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -51,10 +51,10 @@
       "name": "HB_Computers",
       "url": "https://github.com/James-HoneyBadger/HB_Computers",
       "description": "",
-      "language": "C++",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-01T22:12:21Z",
+      "pushedAt": "2026-11-02T03:54:42Z",
       "archived": false
     },
     {

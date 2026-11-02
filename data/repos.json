@@ -1,19 +1,33 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-02T00:43:37.851Z",
+  "generatedAt": "2026-11-02T06:40:39.833Z",
   "repos": [
     {
       "name": "HB_Computers",
       "url": "https://github.com/James-HoneyBadger/HB_Computers",
       "description": "",
-      "language": "C++",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-01T22:12:21Z",
+      "pushedAt": "2026-11-02T03:54:42Z",
       "createdAt": "2026-11-01T12:49:32Z",
       "archived": false,
       "topics": [],
       "license": "NOASSERTION",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-02T00:43:39Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
       "homepage": ""
     },
     {
@@ -48,20 +62,6 @@
         "virtual-machine"
       ],
       "license": "NOASSERTION",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-01T18:24:57Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
       "homepage": ""
     },
     {
