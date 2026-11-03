@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-02T18:26:49.511Z",
+  "generatedAt": "2026-11-03T00:41:25.105Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "An old-school programming environment: eleven languages, a full IDE, and two complete computers inside it.  Timey wimey wibbly wobbly, time & multiuniverse travel computing.",
+      "description": "A desktop programming environment for ten interpreters of the 1964–1980 period, with one editor, one debugger and a live turtle canvas.  Languages Platform License: MIT Version  Time Warp Studio is a C++20 / Qt 6 application for Linux. Ten interpreters are linked into it as libraries: BASIC, APL, Logo, PILOT, FOCAL, Forth, Scheme, COMAL, REXX and S",
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-11-01T18:45:40Z",
+      "pushedAt": "2026-11-02T22:01:26Z",
       "archived": false
     },
     {
@@ -21,7 +21,7 @@
       "language": "C",
       "stars": 7,
       "forks": 1,
-      "pushedAt": "2026-10-23T02:09:07Z",
+      "pushedAt": "2026-11-03T00:35:40Z",
       "archived": false
     },
     {
@@ -32,7 +32,7 @@
       "language": "Assembly",
       "stars": 4,
       "forks": 0,
-      "pushedAt": "2026-10-31T21:29:47Z",
+      "pushedAt": "2026-11-02T22:38:35Z",
       "archived": false
     },
     {
@@ -50,22 +50,22 @@
       "owner": "James-HoneyBadger",
       "name": "HB_Computers",
       "url": "https://github.com/James-HoneyBadger/HB_Computers",
-      "description": "",
+      "description": "The Kestrel Two fictional home computers — one from 1982, one from 1992 — and the emulator that runs both.  the Kestrel — a 6502 at 1 MHz, 32 KiB of RAM behind a banner that claims 64K, a 40 × 25 tube, a disk measured in 256-byte sectors, an 8 KiB KERNAL and a 16 KiB language socket; and the Kestrel 16 — its 1992 successor: a 65816 at 8 MHz, a mega",
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-02T14:12:13Z",
+      "pushedAt": "2026-11-02T19:55:30Z",
       "archived": false
     },
     {
       "owner": "James-HoneyBadger",
       "name": "CHIP-8",
       "url": "https://github.com/James-HoneyBadger/CHIP-8",
-      "description": "",
+      "description": "A COSMAC VIP emulator with a complete CHIP-8 system: the CDP1802 and the 1977 interpreter as firmware, a linker, a standard library, twenty-three programs, and a desktop application — all in Python.",
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-02T14:31:52Z",
+      "pushedAt": "2026-11-02T20:01:09Z",
       "archived": false
     }
   ]
