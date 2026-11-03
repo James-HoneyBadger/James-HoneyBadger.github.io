@@ -1,7 +1,47 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-03T00:41:25.575Z",
+  "generatedAt": "2026-11-03T06:32:01.532Z",
   "repos": [
+    {
+      "name": "GimletWorks",
+      "url": "https://github.com/James-HoneyBadger/GimletWorks",
+      "description": "One workbench for system administration, cryptography, and metadata privacy.",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-03T03:20:16Z",
+      "createdAt": "2026-10-23T16:20:09Z",
+      "archived": false,
+      "topics": [],
+      "license": "MIT",
+      "homepage": ""
+    },
+    {
+      "name": "TesseraGrid",
+      "url": "https://github.com/James-HoneyBadger/TesseraGrid",
+      "description": "Tessera Grid — a fast Rust/egui cellular-automata simulator with 10 rule sets, 8 themes, headless CLI and PNG/GIF/RLE export",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-03T01:22:10Z",
+      "createdAt": "2025-11-19T16:28:55Z",
+      "archived": false,
+      "topics": [
+        "automata",
+        "cellular-automata",
+        "conway-game-of-life",
+        "desktop-app",
+        "eframe",
+        "egui",
+        "gif-export",
+        "langtons-ant",
+        "rust",
+        "simulation",
+        "wireworld"
+      ],
+      "license": "MIT",
+      "homepage": ""
+    },
     {
       "name": "Mellivora_OS_PicoCalc",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
@@ -9,7 +49,7 @@
       "language": "C",
       "stars": 7,
       "forks": 1,
-      "pushedAt": "2026-11-03T00:35:40Z",
+      "pushedAt": "2026-11-03T00:46:02Z",
       "createdAt": "2026-04-16T15:48:44Z",
       "archived": false,
       "topics": [
@@ -19,6 +59,20 @@
         "pico-calc"
       ],
       "license": "MIT",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-03T00:41:26Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
       "homepage": ""
     },
     {
@@ -115,46 +169,6 @@
       "homepage": ""
     },
     {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-02T18:26:51Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
-      "homepage": ""
-    },
-    {
-      "name": "TesseraGrid",
-      "url": "https://github.com/James-HoneyBadger/TesseraGrid",
-      "description": "Tessera Grid — a fast Rust/egui cellular-automata simulator with 10 rule sets, 8 themes, headless CLI and PNG/GIF/RLE export",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-01T03:59:42Z",
-      "createdAt": "2025-11-19T16:28:55Z",
-      "archived": false,
-      "topics": [
-        "automata",
-        "cellular-automata",
-        "conway-game-of-life",
-        "desktop-app",
-        "eframe",
-        "egui",
-        "gif-export",
-        "langtons-ant",
-        "rust",
-        "simulation",
-        "wireworld"
-      ],
-      "license": "MIT",
-      "homepage": ""
-    },
-    {
       "name": "LashonStudio",
       "url": "https://github.com/James-HoneyBadger/LashonStudio",
       "description": "Lashon is a full-stack programming language construction framework. Define a PEG grammar — either in text notation or via a fluent Python API — and immediately get a working parser, an abstract syntax tree, and code generators targeting Python, C, WebAssembly, and LLVM IR. ",
@@ -179,20 +193,6 @@
       ],
       "license": "MIT",
       "homepage": "https://james-honeybadger.github.io/LashonStudio/"
-    },
-    {
-      "name": "GimletEye",
-      "url": "https://github.com/James-HoneyBadger/GimletEye",
-      "description": "One workbench for system administration, cryptography, and metadata privacy.",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-01T01:05:40Z",
-      "createdAt": "2026-10-23T16:20:09Z",
-      "archived": false,
-      "topics": [],
-      "license": "MIT",
-      "homepage": ""
     },
     {
       "name": "honey-ledger",
