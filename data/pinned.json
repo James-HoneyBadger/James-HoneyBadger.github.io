@@ -1,16 +1,16 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-03T06:32:01.011Z",
+  "generatedAt": "2026-11-04T00:40:26.852Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
       "name": "Time_Warp_Studio",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Studio",
-      "description": "A desktop programming environment for ten interpreters of the 1964–1980 period, with one editor, one debugger and a live turtle canvas.  Languages Platform License: MIT Version  Time Warp Studio is a C++20 / Qt 6 application for Linux. Ten interpreters are linked into it as libraries: BASIC, APL, Logo, PILOT, FOCAL, Forth, Scheme, COMAL, REXX and S",
+      "description": "Time Warp Studio is a desktop programming environment for ten languages of the 1960s and 1970s: BASIC, APL, Logo, PILOT, FOCAL, Forth, Scheme, COMAL, REXX and Smalltalk. Each one runs through its own interpreter, linked straight into the application rather than started as a separate process. Open a program and it runs; the debugger can stop inside ",
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-11-02T22:01:26Z",
+      "pushedAt": "2026-11-04T00:29:50Z",
       "archived": false
     },
     {
