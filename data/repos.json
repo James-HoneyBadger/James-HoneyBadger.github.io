@@ -1,7 +1,32 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-07T12:27:24.725Z",
+  "generatedAt": "2026-11-07T18:25:08.512Z",
   "repos": [
+    {
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-07T13:04:24Z",
+      "createdAt": "2026-03-07T21:10:50Z",
+      "archived": false,
+      "topics": [
+        "budgeting",
+        "desktop-app",
+        "electron",
+        "golang",
+        "money-management",
+        "multi-currency",
+        "personal-finance",
+        "self-hosted",
+        "sqlite",
+        "vue"
+      ],
+      "license": "MIT",
+      "homepage": ""
+    },
     {
       "name": "James-HoneyBadger.github.io",
       "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
@@ -9,7 +34,7 @@
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-07T06:29:13Z",
+      "pushedAt": "2026-11-07T12:27:25Z",
       "createdAt": "2025-12-12T14:54:30Z",
       "archived": false,
       "topics": [],
@@ -228,31 +253,6 @@
       ],
       "license": "MIT",
       "homepage": "https://james-honeybadger.github.io/LashonStudio/"
-    },
-    {
-      "name": "honey-ledger",
-      "url": "https://github.com/James-HoneyBadger/honey-ledger",
-      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-10-31T20:38:49Z",
-      "createdAt": "2026-03-07T21:10:50Z",
-      "archived": false,
-      "topics": [
-        "budgeting",
-        "desktop-app",
-        "electron",
-        "golang",
-        "money-management",
-        "multi-currency",
-        "personal-finance",
-        "self-hosted",
-        "sqlite",
-        "vue"
-      ],
-      "license": "MIT",
-      "homepage": ""
     },
     {
       "name": "Loresmith",
