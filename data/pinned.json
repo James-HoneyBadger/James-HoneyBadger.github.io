@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-13T12:29:54.045Z",
+  "generatedAt": "2026-11-13T18:25:11.434Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -33,17 +33,6 @@
       "stars": 4,
       "forks": 0,
       "pushedAt": "2026-11-02T22:38:35Z",
-      "archived": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "HB_Briefing",
-      "url": "https://github.com/James-HoneyBadger/HB_Briefing",
-      "description": "An autonomous, open-source RSS/Atom intelligence monitor with two-stage DeepSeek AI triage and a standalone desktop GUI. It started as a single Python script; 1.0.0 is its first packaged release.  HB Briefing tracks regulatory action and litigation. That is the core of the product: who is being investigated, sued, fined, settled or ruled against, a",
-      "language": "Python",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-13T12:18:37Z",
       "archived": false
     },
     {
