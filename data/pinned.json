@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-13T18:25:11.434Z",
+  "generatedAt": "2026-11-14T18:25:06.867Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -37,24 +37,35 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "HB_Computers",
-      "url": "https://github.com/James-HoneyBadger/HB_Computers",
-      "description": "The Kestrel Two fictional home computers — one from 1982, one from 1992 — and the emulator that runs both.  the Kestrel — a 6502 at 1 MHz, 32 KiB of RAM behind a banner that claims 64K, a 40 × 25 tube, a disk measured in 256-byte sectors, an 8 KiB KERNAL and a 16 KiB language socket; and the Kestrel 16 — its 1992 successor: a 65816 at 8 MHz, a mega",
-      "language": "Rust",
+      "name": "HB_Briefing",
+      "url": "https://github.com/James-HoneyBadger/HB_Briefing",
+      "description": "An autonomous, open-source RSS/Atom intelligence monitor with two-stage DeepSeek AI triage and a standalone desktop GUI. It started as a single Python script; 1.0.0 is its first packaged release.  HB Briefing tracks regulatory action and litigation. That is the core of the product: who is being investigated, sued, fined, settled or ruled against, a",
+      "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-02T19:55:30Z",
+      "pushedAt": "2026-11-14T04:09:10Z",
       "archived": false
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "CHIP-8",
-      "url": "https://github.com/James-HoneyBadger/CHIP-8",
-      "description": "A COSMAC VIP emulator with a complete CHIP-8 system: the CDP1802 and the 1977 interpreter as firmware, a linker, a standard library, twenty-three programs, and a desktop application — all in Python.",
-      "language": "Python",
+      "name": "GimletWorks",
+      "url": "https://github.com/James-HoneyBadger/GimletWorks",
+      "description": "One workbench for system administration, cryptography, and metadata privacy.",
+      "language": "TypeScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-02T20:01:09Z",
+      "pushedAt": "2026-11-03T03:20:16Z",
+      "archived": false
+    },
+    {
+      "owner": "James-HoneyBadger",
+      "name": "TesseraGrid",
+      "url": "https://github.com/James-HoneyBadger/TesseraGrid",
+      "description": "Tessera Grid — a fast Rust/egui cellular-automata simulator with 10 rule sets, 8 themes, headless CLI and PNG/GIF/RLE export",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-03T01:22:10Z",
       "archived": false
     }
   ]
