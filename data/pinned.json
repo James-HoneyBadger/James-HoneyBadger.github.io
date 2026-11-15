@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-15T12:27:24.982Z",
+  "generatedAt": "2026-11-15T18:25:26.306Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -43,18 +43,18 @@
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-15T11:57:26Z",
+      "pushedAt": "2026-11-15T14:48:09Z",
       "archived": false
     },
     {
       "owner": "James-HoneyBadger",
       "name": "HB_PDF_Studio",
       "url": "https://github.com/James-HoneyBadger/HB_PDF_Studio",
-      "description": "",
-      "language": "",
+      "description": "HB PDF Studio — a free, open-source PDF editor for drawings, built for Linux on ARM64 (AArch64). AArch64-focused build of Open PDF Studio: markup, measuring to scale, revision compare, CAD import and MCP.",
+      "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-15T11:35:45Z",
+      "pushedAt": "2026-11-15T18:19:58Z",
       "archived": false
     },
     {
