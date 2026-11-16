@@ -1,30 +1,7 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-15T18:25:27.450Z",
+  "generatedAt": "2026-11-16T00:48:29.315Z",
   "repos": [
-    {
-      "name": "HB_PDF_Studio",
-      "url": "https://github.com/James-HoneyBadger/HB_PDF_Studio",
-      "description": "HB PDF Studio — a free, open-source PDF editor for drawings, built for Linux on ARM64 (AArch64). AArch64-focused build of Open PDF Studio: markup, measuring to scale, revision compare, CAD import and MCP.",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-15T18:19:58Z",
-      "createdAt": "2026-11-15T11:35:44Z",
-      "archived": false,
-      "topics": [
-        "aarch64",
-        "arm64",
-        "cad",
-        "linux",
-        "mcp",
-        "pdf-editor",
-        "rust",
-        "tauri"
-      ],
-      "license": "LGPL-3.0",
-      "homepage": ""
-    },
     {
       "name": "HB_Briefing",
       "url": "https://github.com/James-HoneyBadger/HB_Briefing",
@@ -32,7 +9,7 @@
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-15T14:48:09Z",
+      "pushedAt": "2026-11-15T18:54:16Z",
       "createdAt": "2026-11-13T14:37:32Z",
       "archived": false,
       "topics": [
@@ -59,11 +36,34 @@
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-15T12:27:26Z",
+      "pushedAt": "2026-11-15T18:25:28Z",
       "createdAt": "2025-12-12T14:54:30Z",
       "archived": false,
       "topics": [],
       "license": "",
+      "homepage": ""
+    },
+    {
+      "name": "HB_PDF_Studio",
+      "url": "https://github.com/James-HoneyBadger/HB_PDF_Studio",
+      "description": "HB PDF Studio — a free, open-source PDF editor for drawings, built for Linux on ARM64 (AArch64). AArch64-focused build of Open PDF Studio: markup, measuring to scale, revision compare, CAD import and MCP.",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-15T18:19:58Z",
+      "createdAt": "2026-11-15T11:35:44Z",
+      "archived": false,
+      "topics": [
+        "aarch64",
+        "arm64",
+        "cad",
+        "linux",
+        "mcp",
+        "pdf-editor",
+        "rust",
+        "tauri"
+      ],
+      "license": "LGPL-3.0",
       "homepage": ""
     },
     {
