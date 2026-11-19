@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-18T18:25:51.201Z",
+  "generatedAt": "2026-11-19T00:43:37.651Z",
   "repos": [
     {
       "name": "Time_Warp_Universe",
@@ -9,7 +9,7 @@
       "language": "C++",
       "stars": 24,
       "forks": 1,
-      "pushedAt": "2026-11-18T18:21:36Z",
+      "pushedAt": "2026-11-18T23:56:27Z",
       "createdAt": "2025-10-09T01:06:28Z",
       "archived": false,
       "topics": [
@@ -33,7 +33,7 @@
         "turtle-graphics",
         "virtual-machine"
       ],
-      "license": "NOASSERTION",
+      "license": "AGPL-3.0",
       "homepage": ""
     },
     {
@@ -43,7 +43,7 @@
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-18T12:29:51Z",
+      "pushedAt": "2026-11-18T18:25:52Z",
       "createdAt": "2025-12-12T14:54:30Z",
       "archived": false,
       "topics": [],
