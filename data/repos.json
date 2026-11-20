@@ -1,7 +1,52 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-20T12:30:16.642Z",
+  "generatedAt": "2026-11-20T18:28:18.151Z",
   "repos": [
+    {
+      "name": "Mellivora_OS",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
+      "description": "Mellivora OS is a from-scratch hobby OS that boots on real x86 hardware or in QEMU. It includes a custom HBFS v3 filesystem with permissions and xattr, ring 3 user-mode execution, a DOS-inspired interactive shell with POSIX features,",
+      "language": "Assembly",
+      "stars": 4,
+      "forks": 0,
+      "pushedAt": "2026-11-20T12:57:53Z",
+      "createdAt": "2026-04-06T13:41:34Z",
+      "archived": false,
+      "topics": [
+        "assembly",
+        "bare-metal",
+        "bootloader",
+        "desktop-environment",
+        "filesystem",
+        "gui",
+        "hobby-os",
+        "kernel",
+        "multitasking",
+        "nasm",
+        "networking",
+        "operating-system",
+        "os-development",
+        "osdev",
+        "qemu",
+        "tcp-ip"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/James-HoneyBadger/Mellivora_OS#readme"
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-20T12:30:18Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
+      "homepage": ""
+    },
     {
       "name": "Time_Warp_Universe",
       "url": "https://github.com/James-HoneyBadger/Time_Warp_Universe",
@@ -34,20 +79,6 @@
         "virtual-machine"
       ],
       "license": "AGPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-20T06:33:41Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
       "homepage": ""
     },
     {
@@ -218,37 +249,6 @@
       ],
       "license": "MIT",
       "homepage": ""
-    },
-    {
-      "name": "Mellivora_OS",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS",
-      "description": "Mellivora OS is a from-scratch hobby OS that boots on real x86 hardware or in QEMU. It includes a custom HBFS v3 filesystem with permissions and xattr, ring 3 user-mode execution, a DOS-inspired interactive shell with POSIX features,",
-      "language": "Assembly",
-      "stars": 4,
-      "forks": 0,
-      "pushedAt": "2026-11-02T22:38:35Z",
-      "createdAt": "2026-04-06T13:41:34Z",
-      "archived": false,
-      "topics": [
-        "assembly",
-        "bare-metal",
-        "bootloader",
-        "desktop-environment",
-        "filesystem",
-        "gui",
-        "hobby-os",
-        "kernel",
-        "multitasking",
-        "nasm",
-        "networking",
-        "operating-system",
-        "os-development",
-        "osdev",
-        "qemu",
-        "tcp-ip"
-      ],
-      "license": "MIT",
-      "homepage": "https://github.com/James-HoneyBadger/Mellivora_OS#readme"
     },
     {
       "name": "CHIP-8",
