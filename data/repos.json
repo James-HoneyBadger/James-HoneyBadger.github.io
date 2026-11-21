@@ -1,7 +1,32 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-21T12:28:46.461Z",
+  "generatedAt": "2026-11-21T18:26:00.331Z",
   "repos": [
+    {
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-21T13:04:45Z",
+      "createdAt": "2026-03-07T21:10:50Z",
+      "archived": false,
+      "topics": [
+        "budgeting",
+        "desktop-app",
+        "electron",
+        "golang",
+        "money-management",
+        "multi-currency",
+        "personal-finance",
+        "self-hosted",
+        "sqlite",
+        "vue"
+      ],
+      "license": "MIT",
+      "homepage": ""
+    },
     {
       "name": "James-HoneyBadger.github.io",
       "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
@@ -9,7 +34,7 @@
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-21T06:31:45Z",
+      "pushedAt": "2026-11-21T12:28:48Z",
       "createdAt": "2025-12-12T14:54:30Z",
       "archived": false,
       "topics": [],
@@ -129,31 +154,6 @@
         "tauri"
       ],
       "license": "LGPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "honey-ledger",
-      "url": "https://github.com/James-HoneyBadger/honey-ledger",
-      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-14T13:04:46Z",
-      "createdAt": "2026-03-07T21:10:50Z",
-      "archived": false,
-      "topics": [
-        "budgeting",
-        "desktop-app",
-        "electron",
-        "golang",
-        "money-management",
-        "multi-currency",
-        "personal-finance",
-        "self-hosted",
-        "sqlite",
-        "vue"
-      ],
-      "license": "MIT",
       "homepage": ""
     },
     {
