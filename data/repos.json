@@ -1,7 +1,26 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-22T12:28:21.848Z",
+  "generatedAt": "2026-11-22T18:26:29.256Z",
   "repos": [
+    {
+      "name": "Mellivora_OS_PicoCalc",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
+      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
+      "language": "C",
+      "stars": 7,
+      "forks": 1,
+      "pushedAt": "2026-11-22T18:02:44Z",
+      "createdAt": "2026-04-16T15:48:44Z",
+      "archived": false,
+      "topics": [
+        "hobby-kernel",
+        "hobby-os",
+        "os-development",
+        "pico-calc"
+      ],
+      "license": "MIT",
+      "homepage": ""
+    },
     {
       "name": "James-HoneyBadger.github.io",
       "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
@@ -9,7 +28,7 @@
       "language": "JavaScript",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-22T06:32:04Z",
+      "pushedAt": "2026-11-22T12:28:23Z",
       "createdAt": "2025-12-12T14:54:30Z",
       "archived": false,
       "topics": [],
@@ -39,25 +58,6 @@
         "vue"
       ],
       "license": "GPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "Mellivora_OS_PicoCalc",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
-      "language": "C",
-      "stars": 7,
-      "forks": 1,
-      "pushedAt": "2026-11-22T05:04:37Z",
-      "createdAt": "2026-04-16T15:48:44Z",
-      "archived": false,
-      "topics": [
-        "hobby-kernel",
-        "hobby-os",
-        "os-development",
-        "pico-calc"
-      ],
-      "license": "MIT",
       "homepage": ""
     },
     {
