@@ -1,21 +1,7 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-22T00:44:46.818Z",
+  "generatedAt": "2026-11-22T06:32:03.473Z",
   "repos": [
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-21T18:26:01Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
-      "homepage": ""
-    },
     {
       "name": "honey-ledger",
       "url": "https://github.com/James-HoneyBadger/honey-ledger",
@@ -23,7 +9,7 @@
       "language": "Go",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-21T13:04:45Z",
+      "pushedAt": "2026-11-22T05:27:56Z",
       "createdAt": "2026-03-07T21:10:50Z",
       "archived": false,
       "topics": [
@@ -38,7 +24,40 @@
         "sqlite",
         "vue"
       ],
+      "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "Mellivora_OS_PicoCalc",
+      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
+      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
+      "language": "C",
+      "stars": 7,
+      "forks": 1,
+      "pushedAt": "2026-11-22T05:04:37Z",
+      "createdAt": "2026-04-16T15:48:44Z",
+      "archived": false,
+      "topics": [
+        "hobby-kernel",
+        "hobby-os",
+        "os-development",
+        "pico-calc"
+      ],
       "license": "MIT",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-22T00:44:48Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
       "homepage": ""
     },
     {
@@ -227,25 +246,6 @@
         "rust",
         "simulation",
         "wireworld"
-      ],
-      "license": "MIT",
-      "homepage": ""
-    },
-    {
-      "name": "Mellivora_OS_PicoCalc",
-      "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
-      "description": "Mellivora OS port for the Clockwork PicoCalc handheld device, featuring a full shell, productivity applications, BASIC and Tiny C interpreters, scripting support, and extensive documentation.",
-      "language": "C",
-      "stars": 7,
-      "forks": 1,
-      "pushedAt": "2026-11-03T00:46:02Z",
-      "createdAt": "2026-04-16T15:48:44Z",
-      "archived": false,
-      "topics": [
-        "hobby-kernel",
-        "hobby-os",
-        "os-development",
-        "pico-calc"
       ],
       "license": "MIT",
       "homepage": ""

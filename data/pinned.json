@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-20T18:28:17.450Z",
+  "generatedAt": "2026-11-22T06:32:02.907Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -21,7 +21,7 @@
       "language": "C",
       "stars": 7,
       "forks": 1,
-      "pushedAt": "2026-11-03T00:46:02Z",
+      "pushedAt": "2026-11-22T05:04:37Z",
       "archived": false
     },
     {
@@ -59,13 +59,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "GimletWorks",
-      "url": "https://github.com/James-HoneyBadger/GimletWorks",
-      "description": "One workbench for system administration, cryptography, and metadata privacy.",
-      "language": "TypeScript",
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-03T03:20:16Z",
+      "pushedAt": "2026-11-22T05:27:56Z",
       "archived": false
     }
   ]
