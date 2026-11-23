@@ -1,6 +1,6 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-23T12:31:46.085Z",
+  "generatedAt": "2026-11-23T18:27:16.436Z",
   "pinned": [
     {
       "owner": "James-HoneyBadger",
@@ -37,6 +37,17 @@
     },
     {
       "owner": "James-HoneyBadger",
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-23T16:16:57Z",
+      "archived": false
+    },
+    {
+      "owner": "James-HoneyBadger",
       "name": "HB_Briefing",
       "url": "https://github.com/James-HoneyBadger/HB_Briefing",
       "description": "Local-first RSS/Atom signal monitor: grades what matters, verifies flagged items, keeps dossiers and cited reports. GUI, TUI, web, CLI, WASM.",
@@ -48,24 +59,13 @@
     },
     {
       "owner": "James-HoneyBadger",
-      "name": "HB_PDF_Studio",
-      "url": "https://github.com/James-HoneyBadger/HB_PDF_Studio",
-      "description": "HB PDF Studio — a free, open-source PDF editor for drawings, built for Linux on ARM64 (AArch64). AArch64-focused build of Open PDF Studio: markup, measuring to scale, revision compare, CAD import and MCP.",
-      "language": "JavaScript",
+      "name": "HB_SunRise",
+      "url": "https://github.com/James-HoneyBadger/HB_SunRise",
+      "description": "",
+      "language": "",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-15T18:19:58Z",
-      "archived": false
-    },
-    {
-      "owner": "James-HoneyBadger",
-      "name": "honey-ledger",
-      "url": "https://github.com/James-HoneyBadger/honey-ledger",
-      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-23T12:26:33Z",
+      "pushedAt": "2026-11-23T14:17:10Z",
       "archived": false
     }
   ]
