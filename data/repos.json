@@ -1,7 +1,46 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-23T00:46:39.449Z",
+  "generatedAt": "2026-11-23T06:44:57.415Z",
   "repos": [
+    {
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-23T04:43:12Z",
+      "createdAt": "2026-03-07T21:10:50Z",
+      "archived": false,
+      "topics": [
+        "budgeting",
+        "desktop-app",
+        "electron",
+        "golang",
+        "money-management",
+        "multi-currency",
+        "personal-finance",
+        "self-hosted",
+        "sqlite",
+        "vue"
+      ],
+      "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-23T00:46:40Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
+      "homepage": ""
+    },
     {
       "name": "Mellivora_OS_PicoCalc",
       "url": "https://github.com/James-HoneyBadger/Mellivora_OS_PicoCalc",
@@ -19,45 +58,6 @@
         "pico-calc"
       ],
       "license": "MIT",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-22T18:26:30Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
-      "homepage": ""
-    },
-    {
-      "name": "honey-ledger",
-      "url": "https://github.com/James-HoneyBadger/honey-ledger",
-      "description": "A standalone Electron desktop app for personal finance management — local-first, multi-currency, multi-language, with AI receipt recognition and MCP support.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-22T05:27:56Z",
-      "createdAt": "2026-03-07T21:10:50Z",
-      "archived": false,
-      "topics": [
-        "budgeting",
-        "desktop-app",
-        "electron",
-        "golang",
-        "money-management",
-        "multi-currency",
-        "personal-finance",
-        "self-hosted",
-        "sqlite",
-        "vue"
-      ],
-      "license": "GPL-3.0",
       "homepage": ""
     },
     {
