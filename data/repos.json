@@ -1,7 +1,72 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-24T18:27:07.375Z",
+  "generatedAt": "2026-11-25T00:44:00.609Z",
   "repos": [
+    {
+      "name": "HB_SunRise",
+      "url": "https://github.com/James-HoneyBadger/HB_SunRise",
+      "description": "Resurrect decades-old Microsoft Money (.mny / .mbf) files natively on Windows, macOS, and Linux — zero dependencies, 100% offline.",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-24T23:18:11Z",
+      "createdAt": "2026-11-23T14:17:08Z",
+      "archived": false,
+      "topics": [
+        "cli",
+        "data-rec",
+        "golang",
+        "jet4",
+        "mbf",
+        "microsof-money",
+        "mny",
+        "msisam",
+        "personal-finance",
+        "qif"
+      ],
+      "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "Honey Ledger is a self-contained Electron desktop application for individuals who want full control over their financial data. And loads MicroSoft Money files!",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-24T23:02:50Z",
+      "createdAt": "2026-03-07T21:10:50Z",
+      "archived": false,
+      "topics": [
+        "budgeting",
+        "desktop-app",
+        "electron",
+        "golang",
+        "microsoft-money-files",
+        "money-management",
+        "multi-currency",
+        "personal-finance",
+        "self-hosted",
+        "sqlite",
+        "vue"
+      ],
+      "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-24T18:27:08Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
+      "homepage": ""
+    },
     {
       "name": "HB_PDF_Studio",
       "url": "https://github.com/James-HoneyBadger/HB_PDF_Studio",
@@ -23,45 +88,6 @@
         "tauri"
       ],
       "license": "LGPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-24T12:30:57Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
-      "homepage": ""
-    },
-    {
-      "name": "HB_SunRise",
-      "url": "https://github.com/James-HoneyBadger/HB_SunRise",
-      "description": "Resurrect decades-old Microsoft Money (.mny / .mbf) files natively on Windows, macOS, and Linux — zero dependencies, 100% offline.",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-24T02:52:52Z",
-      "createdAt": "2026-11-23T14:17:08Z",
-      "archived": false,
-      "topics": [
-        "cli",
-        "data-rec",
-        "golang",
-        "jet4",
-        "mbf",
-        "microsof-money",
-        "mny",
-        "msisam",
-        "personal-finance",
-        "qif"
-      ],
-      "license": "GPL-3.0",
       "homepage": ""
     },
     {
@@ -96,32 +122,6 @@
         "virtual-machine"
       ],
       "license": "AGPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "honey-ledger",
-      "url": "https://github.com/James-HoneyBadger/honey-ledger",
-      "description": "Honey Ledger is a self-contained Electron desktop application for individuals who want full control over their financial data. And loads MicroSoft Money files!",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-24T01:00:59Z",
-      "createdAt": "2026-03-07T21:10:50Z",
-      "archived": false,
-      "topics": [
-        "budgeting",
-        "desktop-app",
-        "electron",
-        "golang",
-        "microsoft-money-files",
-        "money-management",
-        "multi-currency",
-        "personal-finance",
-        "self-hosted",
-        "sqlite",
-        "vue"
-      ],
-      "license": "GPL-3.0",
       "homepage": ""
     },
     {
