@@ -1,7 +1,21 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-27T06:35:44.615Z",
+  "generatedAt": "2026-11-27T12:31:31.642Z",
   "repos": [
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-27T06:35:46Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
+      "homepage": ""
+    },
     {
       "name": "HB_Continuum",
       "url": "https://github.com/James-HoneyBadger/HB_Continuum",
@@ -43,20 +57,6 @@
         "rust"
       ],
       "license": "MIT",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-27T00:43:32Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
       "homepage": ""
     },
     {
@@ -292,7 +292,7 @@
       "url": "https://github.com/James-HoneyBadger/Loresmith",
       "description": "A high-performance text-based adventure game engine and development suite written in Rust. Create, edit, and play interactive fiction adventures with a CLI player, TUI editor, and GPU-accelerated GUI editor.",
       "language": "Rust",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "pushedAt": "2026-11-26T04:46:59Z",
       "createdAt": "2025-11-20T13:24:07Z",
