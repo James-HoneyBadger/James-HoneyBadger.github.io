@@ -1,15 +1,15 @@
 {
   "user": "James-HoneyBadger",
-  "generatedAt": "2026-11-26T18:28:28.326Z",
+  "generatedAt": "2026-11-27T00:43:30.360Z",
   "repos": [
     {
-      "name": "HB_Dispatch",
-      "url": "https://github.com/James-HoneyBadger/HB_Dispatch",
-      "description": "Local-first email archive and evidence research workstation",
+      "name": "HB_Continuum",
+      "url": "https://github.com/James-HoneyBadger/HB_Continuum",
+      "description": "Local-first personal knowledge archive and source-backed historical research workstation",
       "language": "Python",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-26T17:59:59Z",
+      "pushedAt": "2026-11-27T00:40:54Z",
       "createdAt": "2026-11-25T20:46:02Z",
       "archived": false,
       "topics": [
@@ -21,6 +21,27 @@
         "python",
         "sqlite"
       ],
+      "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "HB_Computers",
+      "url": "https://github.com/James-HoneyBadger/HB_Computers",
+      "description": "Two fictional retro computers: Kestrel (1982, 6502) and Kestrel 16 (1992, 65816). Rust emulator, machine-code ROMs, BASIC, assemblers, cartridges and manuals.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-27T00:31:01Z",
+      "createdAt": "2026-11-01T12:49:32Z",
+      "archived": false,
+      "topics": [
+        "6502",
+        "65816",
+        "basic",
+        "emulator",
+        "retrocomputing",
+        "rust"
+      ],
       "license": "MIT",
       "homepage": ""
     },
@@ -31,7 +52,7 @@
       "language": "Go",
       "stars": 1,
       "forks": 0,
-      "pushedAt": "2026-11-26T17:33:46Z",
+      "pushedAt": "2026-11-26T20:28:16Z",
       "createdAt": "2026-11-23T14:17:08Z",
       "archived": false,
       "topics": [
@@ -47,6 +68,46 @@
         "qif"
       ],
       "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "honey-ledger",
+      "url": "https://github.com/James-HoneyBadger/honey-ledger",
+      "description": "Honey Ledger is a self-contained Electron desktop application for individuals who want full control over their financial data. And loads MicroSoft Money files!",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-26T20:03:00Z",
+      "createdAt": "2026-03-07T21:10:50Z",
+      "archived": false,
+      "topics": [
+        "budgeting",
+        "desktop-app",
+        "electron",
+        "golang",
+        "microsoft-money-files",
+        "money-management",
+        "multi-currency",
+        "personal-finance",
+        "self-hosted",
+        "sqlite",
+        "vue"
+      ],
+      "license": "GPL-3.0",
+      "homepage": ""
+    },
+    {
+      "name": "James-HoneyBadger.github.io",
+      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-11-26T18:28:29Z",
+      "createdAt": "2025-12-12T14:54:30Z",
+      "archived": false,
+      "topics": [],
+      "license": "",
       "homepage": ""
     },
     {
@@ -81,20 +142,6 @@
         "virtual-machine"
       ],
       "license": "AGPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "James-HoneyBadger.github.io",
-      "url": "https://github.com/James-HoneyBadger/James-HoneyBadger.github.io",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-26T12:31:55Z",
-      "createdAt": "2025-12-12T14:54:30Z",
-      "archived": false,
-      "topics": [],
-      "license": "",
       "homepage": ""
     },
     {
@@ -160,20 +207,6 @@
       "homepage": ""
     },
     {
-      "name": "HB_Computers",
-      "url": "https://github.com/James-HoneyBadger/HB_Computers",
-      "description": "The Kestrel Two fictional home computers — one from 1982, one from 1992 — and the emulator that runs both.  the Kestrel — a 6502 at 1 MHz, 32 KiB of RAM behind a banner that claims 64K, a 40 × 25 tube, a disk measured in 256-byte sectors, an 8 KiB KERNAL and a 16 KiB language socket; and the Kestrel 16 — its 1992 successor: a 65816 at 8 MHz, a mega",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-26T04:47:17Z",
-      "createdAt": "2026-11-01T12:49:32Z",
-      "archived": false,
-      "topics": [],
-      "license": "NOASSERTION",
-      "homepage": ""
-    },
-    {
       "name": "HB_Briefing",
       "url": "https://github.com/James-HoneyBadger/HB_Briefing",
       "description": "Local-first RSS/Atom signal monitor: grades what matters, verifies flagged items, keeps dossiers and cited reports. GUI, TUI, web, CLI, WASM.",
@@ -215,32 +248,6 @@
         "hobby-os",
         "os-development",
         "pico-calc"
-      ],
-      "license": "GPL-3.0",
-      "homepage": ""
-    },
-    {
-      "name": "honey-ledger",
-      "url": "https://github.com/James-HoneyBadger/honey-ledger",
-      "description": "Honey Ledger is a self-contained Electron desktop application for individuals who want full control over their financial data. And loads MicroSoft Money files!",
-      "language": "Go",
-      "stars": 1,
-      "forks": 0,
-      "pushedAt": "2026-11-26T04:47:07Z",
-      "createdAt": "2026-03-07T21:10:50Z",
-      "archived": false,
-      "topics": [
-        "budgeting",
-        "desktop-app",
-        "electron",
-        "golang",
-        "microsoft-money-files",
-        "money-management",
-        "multi-currency",
-        "personal-finance",
-        "self-hosted",
-        "sqlite",
-        "vue"
       ],
       "license": "GPL-3.0",
       "homepage": ""
